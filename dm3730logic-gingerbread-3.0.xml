@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote  name="rowboat" fetch="/mirrors/git.gitorious.org/rowboat" />
-  <remote  name="logicpd" fetch="." />
+  <remote  name="rowboat" fetch="git://git.logicpd.com/mirrors/git.gitorious.org/rowboat" />
+  <remote  name="logicpd" fetch="git://git.logicpd.com/" />
+  <remote name="sciaps" fetch="https://github.com/SciAps/" />
 
   <default revision="gingerbread-3.0" />
 
