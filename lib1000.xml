@@ -2,7 +2,7 @@
 <manifest>
   <remote fetch="http://git.logicpd.com/projects/logicpd/dm37x-android" name="logicpd"/>
   <remote fetch="http://git.logicpd.com/mirrors/git.gitorious.org/rowboat" name="rowboat"/>
-  <remote fetch="https://github.com/SciAps" name="sciaps" />
+  <remote fetch="git://git@github.com/SciAps" name="sciaps" />
   
   <default revision="gingerbread-3.0"/>
   
