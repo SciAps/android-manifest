@@ -8,11 +8,11 @@
   
   <!-- Projects created or modified by SciAps -->
   <project remote="sciaps" name="lib1000" path="device/sciaps/lib1000" revision="master" />
-  <project remote="sciaps" name="android-frameworks-base" path="frameworks/base"/>
-  <project remote="sciaps" name="android-build" path="build" >
+  <project remote="sciaps" name="android-frameworks-base" path="frameworks/base" revision="master"/>
+  <project remote="sciaps" name="android-build" path="build" revision="master">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
-  <project remote="sciaps" name="android-build-tools" path="build-tools" >
+  <project remote="sciaps" name="android-build-tools" path="build-tools" revision="master">
     <copyfile dest="build.sh" src="build.sh"/>
   </project>
 
