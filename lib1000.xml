@@ -8,6 +8,7 @@
   
   <!-- Projects created or modified by SciAps -->
   <project remote="sciaps" name="lib1000" path="device/sciaps/lib1000" revision="master" />
+  <project remote="sciaps" name="android-dm3730-kernel" path="kernel" revision="master" />
   <project remote="sciaps" name="android-frameworks-base" path="frameworks/base" revision="master"/>
   <project remote="sciaps" name="android-build" path="build" revision="master">
     <copyfile dest="Makefile" src="core/root.mk"/>
@@ -136,7 +137,6 @@
   <project name="hardware/ti/sgx" remote="logicpd" revision="53a50a5d41c8b64422dbecdd63d7d4ac66fe4c06"/>
   <project name="hardware/ti/wlan" remote="logicpd" revision="0cbaae3b48ec74a440cc50005fbde86e1a2ef79d"/>
   <project name="hardware/ti/wpan" remote="logicpd" revision="027c513347aa8d4474f9a6e090b3f80386f49ae0"/>
-  <project name="kernel" remote="logicpd" revision="b2874c8e4711a9cf9f8d4cc8c806440031840b8a"/>
   <project name="libcore" remote="rowboat" revision="f241d462634527692b7d99335cdc8c11883ac966"/>
   <project name="ndk" remote="rowboat" revision="7a619be40e8594a961066a33b7cc9ef52f566988"/>
   <project name="packages-apps-accountsandsyncsettings" path="packages/apps/AccountsAndSyncSettings" remote="rowboat" revision="0179779e69d0a8ce2879cf27261af9bc2908cae0"/>
