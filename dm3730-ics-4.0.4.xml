@@ -13,7 +13,7 @@
   <project name="u-boot" remote="logicpd" revision="refs/tags/Logic_DM37x_ICS_v1_0" />
   <project name="x-loader" remote="logicpd" revision="refs/tags/Logic_DM37x_ICS_v1_0" />
 
-  <project name="build" remote="logicpd" revision="refs/tags/Logic_DM37x_ICS_v1_0">
+  <project name="build" remote="sciaps" revision="ics">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project name="build-tools" remote="logicpd" revision="refs/tags/Logic_DM37x_ICS_v1_0">
