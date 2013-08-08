@@ -21,7 +21,7 @@
   </project>
 
   <project name="kernel" remote="logicpd" revision="refs/tags/Logic_DM37x_ICS_v1_0" />
-  <project name="device/logicpd/dm3730logic" remote="logicpd" revision="refs/tags/Logic_DM37x_ICS_v1_0" />
+  <project path="vendor/dm3730-kernel" name="android-dm3730-kernel" remote="sciaps" revision="ics" />
   <project name="hardware/ti/sgx" remote="logicpd" revision="refs/tags/Logic_DM37x_ICS_v1_0" />
 
   <project path="abi/cpp" name="platform/abi/cpp" />
