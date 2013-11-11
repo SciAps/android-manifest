@@ -2,6 +2,7 @@
 <manifest>
 
   <remote fetch="ssh://git@github.com/SciAps" name="sciaps" />
+  <remote fetch="ssh://paul@10.98.100.24/var/git" name="server" />
   <remote name="omapzoom" fetch="git://git.omapzoom.org/" />
   <remote  name="aosp"
            fetch="https://android.googlesource.com/" />
@@ -11,6 +12,10 @@
 
   <!-- Android Linux Kernel -->
   <project path="kernel/omap" name="android-kernel" remote="sciaps" revision="phytec-omap44xx" />
+
+  <project path="device/sciaps/marsgold" name="marsgold" remote="sciaps" revision="master" />
+  <project path="vendor/ti" name="ti-vendor.git" remote="server" revision="master" />
+  <project path="vendor/sciaps" name="sciaps-vendor.git" remote="server" revision="master" />
 
   <project path="build" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
