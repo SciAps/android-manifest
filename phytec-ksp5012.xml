@@ -10,6 +10,7 @@
 
   <project path="kernel" name="android-kernel" remote="sciaps" revision="phytec-ksp5012" />
 
+  <project remote="sciaps" name="android-device-ksp5012" path="device/phytec/pcm049" revision="phytec-ksp5012" />
   <project remote="sciaps" name="platform_system_core" path="system/core" revision="phytec-ksp5012" />
   <project remote="sciaps" name="android-OMAPCamera" path="packages/apps/OMAPCamera" revision="phytec-ksp5012" />
   <project remote="sciaps" name="platform_frameworks_base" path="frameworks/base" revision="phytec-ksp5012" />
