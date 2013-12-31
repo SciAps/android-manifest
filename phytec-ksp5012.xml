@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com"
+           review="android-review.googlesource.com" />
   <remote name="omapzoom" fetch="git://git.omapzoom.org/" />
   <remote name="sciaps" fetch="ssh://git@github.com/SciAps" />
   
   <default remote="omapzoom" revision="d-jb-mr1-release" sync-j="2"/>
 
   <project path="kernel" name="android-kernel" remote="sciaps" revision="phytec-ksp5012" />
+
+  <project remote="sciaps" name="platform_system_core" path="system/core" revision="phytec-ksp5012" />
+  <project remote="sciaps" name="android-OMAPCamera" path="packages/apps/OMAPCamera" revision="phytec-ksp5012" />
+  <project remote="sciaps" name="platform_frameworks_base" path="frameworks/base" revision="phytec-ksp5012" />
+  <project remote="sciaps" name="android-frameworks-native" path="frameworks/native" revision="phytec-ksp5012" />
+  <project remote="sciaps" name="platform_packages_apps_settings" path="packages/apps/Settings" revision="phytec-ksp5012" />
+  <project remote="sciaps" name="android-ti-proprietary-open" path="device/ti/proprietary-open" revision="phytec-ksp5012" />
+  <project remote="sciaps" name="android-ti-domx" path="hardware/ti/domx" revision="phytec-ksp5012" />
+  <project remote="sciaps" name="android-ti-omap4xxx" path="hardware/ti/omap4xxx" revision="phytec-ksp5012" />
+
+
   
   <project groups="device" name="device/asus/grouper" revision="c384f5f2ac0c60106a93b45c30ff4137131f2d39" upstream="d-jb-mr1-release"/>
   <project groups="device" name="device/asus/tilapia" revision="148ec084c4c40e7c3b833c6f65cbee6c703593fc" upstream="d-jb-mr1-release"/>
@@ -32,7 +46,6 @@
   <project name="device/ti/omap5sevm" revision="66784383c46dc26b8e5df7a351282c9ad4399039" upstream="d-jb-mr1-release"/>
   <project groups="device" name="device/ti/panda" revision="530beda34c2082a2e2866f5a673c004dcb15c992" upstream="d-jb-mr1-release"/>
   <project name="device/ti/panda5" revision="318ccb567eacabc3b1bc4c64f058788ca7811954" upstream="d-jb-mr1-release"/>
-  <project name="device/ti/proprietary-open" revision="75b4bb3872e42fa32d04508beb5da44d6fd328de" upstream="d-jb-mr1-release"/>
   <project name="platform/abi/cpp" path="abi/cpp" revision="eb789ea833d8d800662b67914d9c1785a58c2caa" upstream="d-jb-mr1-release"/>
   <project name="platform/bionic" path="bionic" revision="c8045cb58d7584d8d2b401754f2aef185d52ab85" upstream="d-jb-mr1-release"/>
   <project name="platform/bootable/bootloader/legacy" path="bootable/bootloader/legacy" revision="3c491d6efb8ff2534a6934702760a6273f197918" upstream="d-jb-mr1-release"/>
@@ -207,7 +220,6 @@
   <project name="platform/external/zlib" path="external/zlib" revision="2d5094f0ebcb01fb9f11952d776945b090d89cf0" upstream="d-jb-mr1-release"/>
   <project name="platform/external/zxing" path="external/zxing" revision="7620644768ffc235607b3a94671e49518c18686f" upstream="d-jb-mr1-release"/>
   <project name="platform/frameworks/av" path="frameworks/av" revision="375e9f3f9e9b997b315d6d7e4d0aa516d04b96ab" upstream="d-jb-mr1-release"/>
-  <project name="platform/frameworks/base" path="frameworks/base" revision="53cf57de495098fe9e19013c2d7cee59f25c40ff" upstream="d-jb-mr1-release"/>
   <project name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="6f3138bbc93b7105ddb49a803c15c3f98077f533" upstream="d-jb-mr1-release"/>
   <project name="platform/frameworks/compile/linkloader" path="frameworks/compile/linkloader" revision="40f55f0f983885e7c325074d8cc8e5e052cdf0f3" upstream="d-jb-mr1-release"/>
   <project name="platform/frameworks/compile/llvm-ndk-cc" path="frameworks/compile/llvm-ndk-cc" revision="a57b3dcfde6356263c6ee22619340f504e297262" upstream="d-jb-mr1-release"/>
@@ -216,7 +228,6 @@
   <project name="platform/frameworks/ex" path="frameworks/ex" revision="8adb8f081f31911059a96bd426de01a4d3128e1a" upstream="d-jb-mr1-release"/>
   <project name="platform/frameworks/mff" path="frameworks/mff" revision="b9669b8540a1e5c953374d53b115514335e23c27" upstream="d-jb-mr1-release"/>
   <project name="platform/frameworks/ml" path="frameworks/ml" revision="984e52f31d596840cfa51b1238e1c43d2e1918f8" upstream="d-jb-mr1-release"/>
-  <project name="platform/frameworks/native" path="frameworks/native" revision="c724a3cd0fe095125ffcd76a024cd96704a58e6b" upstream="d-jb-mr1-release"/>
   <project name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar" revision="a30f9f3ab4e0e42e02540518dd37b352257cd98d" upstream="d-jb-mr1-release"/>
   <project name="platform/frameworks/opt/carddav" path="frameworks/opt/carddav" revision="f08aa2df132dd8dc32a0013d3750137d9dd9280a" upstream="d-jb-mr1-release"/>
   <project name="platform/frameworks/opt/emoji" path="frameworks/opt/emoji" revision="0805d75d3c4319f54fb3c854be2f7baab561cf1b" upstream="d-jb-mr1-release"/>
@@ -249,9 +260,7 @@
   <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" revision="59d7a95be90328306ac2dfef31a5663f1f2d76fc" upstream="d-jb-mr1-release"/>
   <project name="platform/hardware/ril" path="hardware/ril" revision="ea51a9d8cbd0a5eaea9d7d6088fd64317a547f68" upstream="d-jb-mr1-release"/>
   <project name="platform/hardware/samsung_slsi/exynos5" path="hardware/samsung_slsi/exynos5" revision="7219980a19c026fb454c1decdd2eacd22691df6b" upstream="d-jb-mr1-release"/>
-  <project name="platform/hardware/ti/domx" path="hardware/ti/domx" revision="9879519fb9fb873c7fff6db2e1a44112811505d2" upstream="d-jb-mr1-release"/>
   <project name="platform/hardware/ti/omap3" path="hardware/ti/omap3" revision="efbb6b2de5fa16ef72bbf02526e3c0a7a6d63a4f" upstream="d-jb-mr1-release"/>
-  <project name="platform/hardware/ti/omap4xxx" path="hardware/ti/omap4xxx" revision="cf24739c1477ec16926ad93f01611c65dbe3bf07" upstream="d-jb-mr1-release"/>
   <project name="platform/hardware/ti/wlan" path="hardware/ti/wlan" revision="ab4cbe3fac052344abc675fb82e7ab674d9efee7" upstream="d-jb-mr1-release"/>
   <project name="platform/hardware/ti/wpan" path="hardware/ti/wpan" revision="108b47d4c48d6e2d6c450ddc463e12452fdc0e2d" upstream="d-jb-mr1-release"/>
   <project name="platform/libcore" path="libcore" revision="5a83ad2e22119085df5b3b34a3eff3799ea42b1e" upstream="d-jb-mr1-release"/>
@@ -279,13 +288,11 @@
   <project name="platform/packages/apps/Music" path="packages/apps/Music" revision="d3dd25fd7c7f92e32309cd5da8352686fcb29bff" upstream="d-jb-mr1-release"/>
   <project name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX" revision="bc778ede573dc74646d42dfe96997f74b23ac61d" upstream="d-jb-mr1-release"/>
   <project name="platform/packages/apps/Nfc" path="packages/apps/Nfc" revision="fc807f8a8f4c86b1d44caa6d05d0b9dbd6fc376f" upstream="d-jb-mr1-release"/>
-  <project name="platform/packages/apps/OMAPCamera" path="packages/apps/OMAPCamera" revision="d13ec4cffed5e2089cf9e3f87977a81f6a4133f1" upstream="d-jb-mr1-release"/>
   <project name="platform/packages/apps/PackageInstaller" path="packages/apps/PackageInstaller" revision="3e76ae182cdb2d44a59ef3762321018bdb4de8dc" upstream="d-jb-mr1-release"/>
   <project name="platform/packages/apps/Phone" path="packages/apps/Phone" revision="5c24ba2eaee30b1eb232b3a22a925240d25857fc" upstream="d-jb-mr1-release"/>
   <project name="platform/packages/apps/Protips" path="packages/apps/Protips" revision="d3815b7cfdd90ba39b7deafc758085f0a21fdd88" upstream="d-jb-mr1-release"/>
   <project name="platform/packages/apps/Provision" path="packages/apps/Provision" revision="10c3003a034b9c18b7d17e967135088b95b9ca31" upstream="d-jb-mr1-release"/>
   <project name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" revision="c7e09795ecee56d735bf966a162dd89ad9be597a" upstream="d-jb-mr1-release"/>
-  <project name="platform/packages/apps/Settings" path="packages/apps/Settings" revision="7cd4c5c2372eca158d9825e0f88895e5c29a7344" upstream="d-jb-mr1-release"/>
   <project name="platform/packages/apps/SmartCardService" path="packages/apps/SmartCardService" revision="29eae320a4bd222b5ff1c092f84f1aebba88d0b7" upstream="d-jb-mr1-release"/>
   <project name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder" revision="3c7d3815e2c3d7f0c95ef09766f40ce35713e362" upstream="d-jb-mr1-release"/>
   <project name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" revision="4db997871e3f4c3f84660815096e5276b47c5c91" upstream="d-jb-mr1-release"/>
@@ -342,7 +349,6 @@
   <project name="platform/prebuilts/tools" path="prebuilts/tools" revision="bbf7c256c4f5261c20599ec2f0d4f9316cb226bd" upstream="d-jb-mr1-release"/>
   <project name="platform/sdk" path="sdk" revision="779041f18578734729c41d172eee38e45dec4627" upstream="d-jb-mr1-release"/>
   <project name="platform/system/bluetooth" path="system/bluetooth" revision="8d2fef3fa40e01380774f47fb5741c0ad4d5a93a" upstream="d-jb-mr1-release"/>
-  <project name="platform/system/core" path="system/core" revision="4ba88e4b54702b7a12bf0768330c23cbd744f9c7" upstream="d-jb-mr1-release"/>
   <project name="platform/system/extras" path="system/extras" revision="80d69a7349b7311e6fd2769a8a2b83d0e573562b" upstream="d-jb-mr1-release"/>
   <project name="platform/system/media" path="system/media" revision="6c94a620035d8e719bf4e5040e39db92700bff6c" upstream="d-jb-mr1-release"/>
   <project name="platform/system/netd" path="system/netd" revision="645ffe1b6c9340cdee4bce4b048130db28780c10" upstream="d-jb-mr1-release"/>
