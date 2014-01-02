@@ -8,6 +8,7 @@
   
   <default remote="omapzoom" revision="d-jb-mr1-release" sync-j="2"/>
   
+  <project remote="sciaps" path="vendor/sciaps" name="vendor-sciaps" revision="phytec-ksp5012" />
   <project remote="sciaps" path="barebox" name="barebox" revision="phytec-ksp5012" />
   <project path="kernel" name="android-kernel" remote="sciaps" revision="phytec-ksp5012" />
 
