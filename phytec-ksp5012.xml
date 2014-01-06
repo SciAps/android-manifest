@@ -8,6 +8,10 @@
   
   <default remote="omapzoom" revision="d-jb-mr1-release" sync-j="2"/>
   
+  <project remote="sciaps" name="platform_build" path="build" revision="phytec-ksp5012" >
+    <copyfile dest="Makefile" src="core/root.mk"/>
+  </project>
+  
   <project remote="sciaps" path="vendor/sciaps" name="vendor-sciaps" revision="phytec-ksp5012" />
   <project remote="sciaps" path="barebox" name="barebox" revision="phytec-ksp5012" />
   <project path="kernel" name="android-kernel" remote="sciaps" revision="phytec-ksp5012" />
@@ -54,9 +58,6 @@
   <project name="platform/bootable/bootloader/legacy" path="bootable/bootloader/legacy" revision="3c491d6efb8ff2534a6934702760a6273f197918" upstream="d-jb-mr1-release"/>
   <project name="platform/bootable/diskinstaller" path="bootable/diskinstaller" revision="60d078a5924284a452a8fe739247704f8b31c754" upstream="d-jb-mr1-release"/>
   <project name="platform/bootable/recovery" path="bootable/recovery" revision="a88a3b35960e5c12fd4de18c58376d9c78e19043" upstream="d-jb-mr1-release"/>
-  <project name="platform/build" path="build" revision="0dcc2907a278ce8e77f9589ff7f4659e6ac049a7" upstream="d-jb-mr1-release">
-    <copyfile dest="Makefile" src="core/root.mk"/>
-  </project>
   <project name="platform/cts" path="cts" revision="5f330b951b7771b0dc08004b923516284fd4bfe9" upstream="d-jb-mr1-release"/>
   <project name="platform/dalvik" path="dalvik" revision="583e1f6c32d09620cc9c352758335be7ea57ca73" upstream="d-jb-mr1-release"/>
   <project name="platform/development" path="development" revision="f893fe7ac10a97edf7cd5b1f3165a4627d32a153" upstream="d-jb-mr1-release"/>
