@@ -14,6 +14,7 @@
 	       sync-j="4" />
 
 	<project path="device/sciaps/libz500" remote="sciaps" name="android-device-libz500" revision="v4.2.2" />
+	<project path="device/ti/proprietary-open" remote="sciaps" name="android-ti-proprietary-open" revision="phytec-ksp5012" />
 
 	<project path="build" name="platform/build" groups="pdk" >
 		<copyfile src="core/root.mk" dest="Makefile" />
