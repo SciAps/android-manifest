@@ -13,11 +13,19 @@
 	       remote="omapzoom"
 	       sync-j="4" />
 
+	<project name="platform/build" path="build" remote="sciaps" revision="libz5004.2.2">
+		<copyfile dest="Makefile" src="core/root.mk"/>
+	</project>
+
 	<project path="busybox-android" name="busybox-android" remote="busybox-android" revision="master"/>
 
 	<project path="device/sciaps/libz500" remote="sciaps" name="android-device-libz500" revision="v4.2.2" />
 	<project remote="sciaps" path="vendor/sciaps" name="vendor-sciaps" revision="libz5004.2.2" />
 	<project remote="sciaps" path="kernel" name="android-kernel" revision="phytec-ksp5012" />
+
+	<project name="android-ti-omap4xxx.git" path="hardware/ti/omap4xxx" remote="sciaps" revision="libz5004.2.2" />
+
+	<project path="frameworks/base" name="platform_frameworks_base" remote="sciaps" revision="libz5004.2.2" />
 
 	<project name="device/common" revision="c7554b7cca3b50fb888aa803bdfb4f3c7caf96d9" upstream="p-jb-mr1-release"/>
 	<project name="device/generic/armv7-a" revision="700aab170ce712a62b268055637c0afded59bf04" upstream="p-jb-mr1-release"/>
@@ -46,9 +54,6 @@
 	<project name="platform/bootable/bootloader/legacy" path="bootable/bootloader/legacy" revision="3c491d6efb8ff2534a6934702760a6273f197918" upstream="p-jb-mr1-release"/>
 	<project name="platform/bootable/diskinstaller" path="bootable/diskinstaller" revision="60d078a5924284a452a8fe739247704f8b31c754" upstream="p-jb-mr1-release"/>
 	<project name="platform/bootable/recovery" path="bootable/recovery" revision="39557fb11a69f6c8fb9dc930032159ef108304c7" upstream="p-jb-mr1-release"/>
-	<project name="platform/build" path="build" revision="fc7cbcbac4e95d93afff3533277467116852d9cd" upstream="p-jb-mr1-release">
-	<copyfile dest="Makefile" src="core/root.mk"/>
-	</project>
 	<project name="platform/cts" path="cts" revision="4a7859ec172c9a615f4090bb4e945a64c6f1132b" upstream="p-jb-mr1-release"/>
 	<project name="platform/dalvik" path="dalvik" revision="ac5c898cbc25ff5ee58797355a5231e8f109137b" upstream="p-jb-mr1-release"/>
 	<project name="platform/development" path="development" revision="ee62b0d263dec93024e01c719816806bfa6a1f86" upstream="p-jb-mr1-release"/>
@@ -215,7 +220,6 @@
 	<project name="platform/external/zlib" path="external/zlib" revision="2d5094f0ebcb01fb9f11952d776945b090d89cf0" upstream="p-jb-mr1-release"/>
 	<project name="platform/external/zxing" path="external/zxing" revision="7620644768ffc235607b3a94671e49518c18686f" upstream="p-jb-mr1-release"/>
 	<project name="platform/frameworks/av" path="frameworks/av" revision="1cbb025a0fcec05b00ad31779b0b50829b8a5431" upstream="p-jb-mr1-release"/>
-	<project name="platform/frameworks/base" path="frameworks/base" revision="ad3d3c4ec4b928928a47b188b082226ffee584fb" upstream="p-jb-mr1-release"/>
 	<project name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="6f3138bbc93b7105ddb49a803c15c3f98077f533" upstream="p-jb-mr1-release"/>
 	<project name="platform/frameworks/compile/linkloader" path="frameworks/compile/linkloader" revision="411f6e8443d9dfb19e867a13714db364650e0ebd" upstream="p-jb-mr1-release"/>
 	<project name="platform/frameworks/compile/llvm-ndk-cc" path="frameworks/compile/llvm-ndk-cc" revision="a57b3dcfde6356263c6ee22619340f504e297262" upstream="p-jb-mr1-release"/>
@@ -259,7 +263,6 @@
 	<project name="platform/hardware/samsung_slsi/exynos5" path="hardware/samsung_slsi/exynos5" revision="7219980a19c026fb454c1decdd2eacd22691df6b" upstream="p-jb-mr1-release"/>
 	<project name="platform/hardware/ti/domx" path="hardware/ti/domx" revision="2319e7e2d6b50fed8d078891f5a2bdedcf4c49d6" upstream="p-jb-mr1-release"/>
 	<project name="platform/hardware/ti/omap3" path="hardware/ti/omap3" revision="efbb6b2de5fa16ef72bbf02526e3c0a7a6d63a4f" upstream="p-jb-mr1-release"/>
-	<project name="platform/hardware/ti/omap4xxx" path="hardware/ti/omap4xxx" revision="5d1a449db13e67e066f134126c54c9ebe280b680" upstream="p-jb-mr1-release"/>
 	<project name="platform/hardware/ti/wlan" path="hardware/ti/wlan" revision="e01ba92ed6959ee260e4195ee2e17b840977881e" upstream="p-jb-mr1-release"/>
 	<project name="platform/hardware/ti/wpan" path="hardware/ti/wpan" revision="ac8a960a28d1288d94f372d31a919be67e7cec03" upstream="p-jb-mr1-release"/>
 	<project name="platform/libcore" path="libcore" revision="91dcd8e88f791e64177adff2212942240e4d05c6" upstream="p-jb-mr1-release"/>
