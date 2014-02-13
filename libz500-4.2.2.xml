@@ -13,7 +13,7 @@
 	       remote="omapzoom"
 	       sync-j="4" />
 
-	<project name="platform/build" path="build" remote="sciaps" revision="libz5004.2.2">
+	<project name="platform_build" path="build" remote="sciaps" revision="libz5004.2.2">
 		<copyfile dest="Makefile" src="core/root.mk"/>
 	</project>
 
