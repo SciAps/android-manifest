@@ -26,6 +26,7 @@
 	<project name="android-ti-omap4xxx.git" path="hardware/ti/omap4xxx" remote="sciaps" revision="libz5004.2.2" />
 
 	<project path="frameworks/base" name="platform_frameworks_base" remote="sciaps" revision="libz5004.2.2" />
+	<project path="hardware/libhardware" name="platform_hardware_libhardware"  revision="libz5004.2.2" />
 
 	<project name="device/common" revision="c7554b7cca3b50fb888aa803bdfb4f3c7caf96d9" upstream="p-jb-mr1-release"/>
 	<project name="device/generic/armv7-a" revision="700aab170ce712a62b268055637c0afded59bf04" upstream="p-jb-mr1-release"/>
@@ -245,7 +246,6 @@
 	<project name="platform/gdk" path="gdk" revision="4cad58ef8e2fc58576b4f3b00a19fa508d139536" upstream="p-jb-mr1-release"/>
 	<project name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan" revision="3c4155b1103f0716e6cf279ba329543d89684096" upstream="p-jb-mr1-release"/>
 	<project name="platform/hardware/invensense" path="hardware/invensense" revision="33ce91b37062fa63af192f5643de93f3beebe854" upstream="p-jb-mr1-release"/>
-	<project name="platform/hardware/libhardware" path="hardware/libhardware" revision="72342bc9462bec3cb1662838aa57075104318d77" upstream="p-jb-mr1-release"/>
 	<project name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" revision="fb432aae5ed83b6ba86e04a994ea046dad837d34" upstream="p-jb-mr1-release"/>
 	<project name="platform/hardware/msm7k" path="hardware/msm7k" revision="f587fd7829fcd2ef42241ef140de203b520a6405" upstream="p-jb-mr1-release"/>
 	<project name="platform/hardware/qcom/audio" path="hardware/qcom/audio" revision="014d19fa3d557cfc931b3dd5ecf8cdedc591d6ca" upstream="p-jb-mr1-release"/>
