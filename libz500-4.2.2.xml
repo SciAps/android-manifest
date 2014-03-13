@@ -6,7 +6,6 @@
 	   review="android-review.googlesource.com" />
 	<remote name="omapzoom" fetch="git://git.omapzoom.org/" />
 	<remote name="sciaps" fetch="ssh://git@github.com/SciAps" />
-	<remote name="busybox-android" fetch="git://github.com/Gnurou" />
 	<remote name="cyanogenmod" fetch="ssh://git@github.com/CyanogenMod" />
 
 	<default revision="p-jb-mr1-release"
@@ -17,7 +16,7 @@
 		<copyfile dest="Makefile" src="core/root.mk"/>
 	</project>
 
-	<project path="busybox-android" name="busybox-android" remote="busybox-android" revision="master"/>
+	<project path="busybox-android" name="busybox-android" remote="sciaps" revision="libz5004.2.2"/>
 	
 	<project remote="sciaps" path="barebox" name="barebox" revision="phytec-ksp5012" />
 
