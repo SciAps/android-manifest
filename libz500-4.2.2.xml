@@ -17,6 +17,7 @@
 	</project>
 
 	<project path="busybox-android" name="busybox-android" remote="sciaps" revision="libz5004.2.2"/>
+	<project path="device/ti/proprietary-open" remote="sciaps" name="android-ti-proprietary-open" revision="libz5004.2.2" />
 	
 	<project remote="sciaps" path="barebox" name="barebox" revision="phytec-ksp5012" />
 
@@ -53,7 +54,6 @@
 	<project name="device/ti/omap5sevm" revision="85dcd8f3f509fd6b6bcf1835410a07bf5994fac1" upstream="p-jb-mr1-release"/>
 	<project groups="device" name="device/ti/panda" revision="08e0706745d2798150d89d69da6b1abe7fa87f5b" upstream="p-jb-mr1-release"/>
 	<project name="device/ti/panda5" revision="be0b5b29b729f2cd93507693c17799e8e129d4fd" upstream="p-jb-mr1-release"/>
-	<project name="device/ti/proprietary-open" revision="bffc810623a565214d5e30086f0f5e24c7c9474b" upstream="p-jb-mr1-release"/>
 	<project name="platform/abi/cpp" path="abi/cpp" revision="eb789ea833d8d800662b67914d9c1785a58c2caa" upstream="p-jb-mr1-release"/>
 	<project name="platform/bionic" path="bionic" revision="e30f6e13bb3ecb4659a740e17e6c0cb12451e71e" upstream="p-jb-mr1-release"/>
 	<project name="platform/bootable/bootloader/legacy" path="bootable/bootloader/legacy" revision="3c491d6efb8ff2534a6934702760a6273f197918" upstream="p-jb-mr1-release"/>
