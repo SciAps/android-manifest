@@ -29,6 +29,7 @@
 	<project path="vendor/sciaps/LIBZService" name="LIBZService" remote="sciaps" revision="libz5004.2.2" />
 	<project path="vendor/sciaps/LIBZFactoryMode" name="LIBZFactoryMode" remote="sciaps" revision="libz5004.2.2" />
 	<project path="vendor/sciaps/LIBZHome" name="LIBZHome" remote="sciaps" revision="libz5004.2.2" />
+	<project path="vendor/sciaps/LIBZAlloyMatch" name="AndroidLibs" remote="sciaps" revision="libz5004.2.2" />
 	<project remote="sciaps" path="kernel" name="android-kernel" revision="phytec-ksp5012" />
 
 	<project name="android-ti-omap4xxx.git" path="hardware/ti/omap4xxx" remote="sciaps" revision="libz5004.2.2" />
