@@ -33,6 +33,7 @@
 	<project remote="sciaps" path="kernel" name="android-kernel" revision="phytec-ksp5012" />
 
 	<project name="android-ti-omap4xxx.git" path="hardware/ti/omap4xxx" remote="sciaps" revision="libz5004.2.2" />
+	<project name="hardware_ti_wlan" path="hardware/ti/wlan" revision="libz5004.2.2" />
 
 	<project path="frameworks/base" name="platform_frameworks_base" remote="sciaps" revision="libz5004.2.2" />
 	<project path="hardware/libhardware" name="platform_hardware_libhardware" remote="sciaps" revision="libz5004.2.2" />
@@ -271,7 +272,6 @@
 	<project name="platform/hardware/samsung_slsi/exynos5" path="hardware/samsung_slsi/exynos5" revision="7219980a19c026fb454c1decdd2eacd22691df6b" upstream="p-jb-mr1-release"/>
 	<project name="platform/hardware/ti/domx" path="hardware/ti/domx" revision="2319e7e2d6b50fed8d078891f5a2bdedcf4c49d6" upstream="p-jb-mr1-release"/>
 	<project name="platform/hardware/ti/omap3" path="hardware/ti/omap3" revision="efbb6b2de5fa16ef72bbf02526e3c0a7a6d63a4f" upstream="p-jb-mr1-release"/>
-	<project name="platform/hardware/ti/wlan" path="hardware/ti/wlan" revision="e01ba92ed6959ee260e4195ee2e17b840977881e" upstream="p-jb-mr1-release"/>
 	<project name="platform/hardware/ti/wpan" path="hardware/ti/wpan" revision="ac8a960a28d1288d94f372d31a919be67e7cec03" upstream="p-jb-mr1-release"/>
 	<project name="platform/libcore" path="libcore" revision="91dcd8e88f791e64177adff2212942240e4d05c6" upstream="p-jb-mr1-release"/>
 	<project name="platform/libnativehelper" path="libnativehelper" revision="73d3c2e3ed100f1d0ccc08a9675844bf8a0848fa" upstream="p-jb-mr1-release"/>
