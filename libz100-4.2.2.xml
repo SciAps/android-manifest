@@ -39,6 +39,7 @@
 
 	<project path="frameworks/base" name="platform_frameworks_base" remote="sciaps" revision="libz5004.2.2" />
 	<project path="hardware/libhardware" name="platform_hardware_libhardware" remote="sciaps" revision="libz5004.2.2" />
+	<project path="system/extras" name="android_system_extras" remote="sciaps" revision="libz500" />
 
 	<project name="device/common" revision="c7554b7cca3b50fb888aa803bdfb4f3c7caf96d9" upstream="p-jb-mr1-release"/>
 	<project name="device/generic/armv7-a" revision="700aab170ce712a62b268055637c0afded59bf04" upstream="p-jb-mr1-release"/>
@@ -363,7 +364,6 @@
 	<project name="platform/prebuilts/tools" path="prebuilts/tools" revision="bbf7c256c4f5261c20599ec2f0d4f9316cb226bd" upstream="p-jb-mr1-release"/>
 	<project name="platform/sdk" path="sdk" revision="779041f18578734729c41d172eee38e45dec4627" upstream="p-jb-mr1-release"/>
 	<project name="platform/system/bluetooth" path="system/bluetooth" revision="8d2fef3fa40e01380774f47fb5741c0ad4d5a93a" upstream="p-jb-mr1-release"/>
-	<project name="platform/system/extras" path="system/extras" revision="536003467a7f0ffc6feea822277ea4e691ea5607" upstream="p-jb-mr1-release"/>
 	<project name="platform/system/media" path="system/media" revision="88af2ee7c602b1090f4bc894c86764e345a640c2" upstream="p-jb-mr1-release"/>
 	<project name="platform/system/netd" path="system/netd" revision="6ca2f5be1538a0fbd5aca73624964d6c4849af22" upstream="p-jb-mr1-release"/>
 	<project name="platform/system/security" path="system/security" revision="cd8df62842b81c93022feabfacda8efd257e1754" upstream="p-jb-mr1-release"/>
