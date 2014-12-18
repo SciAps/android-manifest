@@ -32,7 +32,7 @@
 	<project path="vendor/sciaps/LIBZAlloyMatch" name="AndroidLibs" remote="sciaps" revision="libz5004.2.2" />
 	<project path="vendor/sciaps/LIBZAlloySpec" name="LIBZAlloySpec" remote="sciaps" revision="libz5004.2.2" />
 	<project path="vendor/sciaps/Updater" name="Updater" remote="sciaps" revision="master" />
-	<project remote="sciaps" path="kernel" name="android-kernel" revision="release" />
+	<project remote="sciaps" path="kernel" name="android-kernel" revision="dev" />
 
 	<project name="android-ti-omap4xxx.git" path="hardware/ti/omap4xxx" remote="sciaps" revision="libz5004.2.2" />
 	<project remote="sciaps" name="hardware_ti_wlan" path="hardware/ti/wlan" revision="libz5004.2.2" />
