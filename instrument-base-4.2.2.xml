@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remove-project name="LIBZService" />
+  <remove-project name="LIBZFactoryMode" />
+  <remove-project name="LIBZHome" />
+  <remove-project name="AndroidLibs" />
+  <remove-project name="Updater" />
+  <remove-project name="LIBZAlloySpec"/>
+</manifest>
