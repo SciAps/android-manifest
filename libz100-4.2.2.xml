@@ -47,22 +47,9 @@
 	<project name="device/generic/armv7-a-neon" revision="8a52ffa74a764bfe0445c2eac59048217302e152" upstream="p-jb-mr1-release"/>
 	<project name="device/generic/common" revision="11c092a6cbfcf6207f07a9a8e3398e747e7f5461" upstream="p-jb-mr1-release"/>
 	<project name="device/generic/goldfish" revision="f0397b68bd158c97f8c83ad7c299f8962d6c885e" upstream="p-jb-mr1-release"/>
-	<project name="device/generic/mips" revision="764fe788f7e9cefdd3be6ea29847f19a4f818f94" upstream="p-jb-mr1-release"/>
-	<project name="device/generic/x86" revision="ae8e76ccfa7666e4eee9f0e584e3d02720a65651" upstream="p-jb-mr1-release"/>
-	<project groups="device" name="device/lge/mako" revision="adf54fe79734bcf08d7222d2247af362ff7a6e8b" upstream="p-jb-mr1-release"/>
-	<project groups="device" name="device/lge/mako-kernel" revision="c32917e4d478000f0e1462b2af5822b74fc5fef3" upstream="p-jb-mr1-release"/>
 	<project name="device/sample" revision="0a1a15559f438de43cd7b45504df07bdac77fb60" upstream="p-jb-mr1-release"/>
-	<project groups="device" name="device/samsung/maguro" revision="c93fe3ee8e58c2dbd27b1f82a7dfdc7b040e4244" upstream="p-jb-mr1-release"/>
-	<project groups="device" name="device/samsung/manta" revision="270fe991a1a8d054f89cbcb32960374d732cc969" upstream="p-jb-mr1-release"/>
-	<project groups="device" name="device/samsung/toro" revision="9418e54756a863da67b36f57cdd0cd42005dc536" upstream="p-jb-mr1-release"/>
-	<project groups="device" name="device/samsung/toroplus" revision="4ea2e8d35246ae07e6f26614a53e5132841bd9ff" upstream="p-jb-mr1-release"/>
-	<project groups="device" name="device/samsung/tuna" revision="214d003a47e7fe2962df667c5d65bce92a21a40e" upstream="p-jb-mr1-release"/>
-	<project name="device/ti/blaze" revision="5e3e60496c6c6dd02b9087791b2fd3549c94711f" upstream="p-jb-mr1-release"/>
-	<project name="device/ti/blaze_tablet" revision="22314fa621897de3948f00dc3686acd06fc76be7" upstream="p-jb-mr1-release"/>
 	<project name="device/ti/common-open" revision="75d057d9157f33a99691dc70b9498e2e76bf69ef" upstream="p-jb-mr1-release"/>
-	<project name="device/ti/omap5sevm" revision="85dcd8f3f509fd6b6bcf1835410a07bf5994fac1" upstream="p-jb-mr1-release"/>
 	<project groups="device" name="device/ti/panda" revision="08e0706745d2798150d89d69da6b1abe7fa87f5b" upstream="p-jb-mr1-release"/>
-	<project name="device/ti/panda5" revision="be0b5b29b729f2cd93507693c17799e8e129d4fd" upstream="p-jb-mr1-release"/>
 	<project name="platform/abi/cpp" path="abi/cpp" revision="eb789ea833d8d800662b67914d9c1785a58c2caa" upstream="p-jb-mr1-release"/>
 	<project name="platform/bionic" path="bionic" revision="e30f6e13bb3ecb4659a740e17e6c0cb12451e71e" upstream="p-jb-mr1-release"/>
 	<project name="platform/bootable/bootloader/legacy" path="bootable/bootloader/legacy" revision="3c491d6efb8ff2534a6934702760a6273f197918" upstream="p-jb-mr1-release"/>
@@ -260,63 +247,37 @@
 	<project name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan" revision="3c4155b1103f0716e6cf279ba329543d89684096" upstream="p-jb-mr1-release"/>
 	<project name="platform/hardware/invensense" path="hardware/invensense" revision="33ce91b37062fa63af192f5643de93f3beebe854" upstream="p-jb-mr1-release"/>
 	<project name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" revision="fb432aae5ed83b6ba86e04a994ea046dad837d34" upstream="p-jb-mr1-release"/>
-	<project name="platform/hardware/msm7k" path="hardware/msm7k" revision="f587fd7829fcd2ef42241ef140de203b520a6405" upstream="p-jb-mr1-release"/>
-	<project name="platform/hardware/qcom/audio" path="hardware/qcom/audio" revision="014d19fa3d557cfc931b3dd5ecf8cdedc591d6ca" upstream="p-jb-mr1-release"/>
-	<project name="platform/hardware/qcom/bt" path="hardware/qcom/bt" revision="ad7eab092dae95101a71f1dd758086ad042dcf1d" upstream="p-jb-mr1-release"/>
-	<project name="platform/hardware/qcom/camera" path="hardware/qcom/camera" revision="754ddd382e690edbc5818ddfc004898eedf0c555" upstream="p-jb-mr1-release"/>
-	<project name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="f8661e4aea657e6b7b0c42f0d88a9e6d9ec724be" upstream="p-jb-mr1-release"/>
-	<project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" revision="283486517d4e3382aa387185e1b4ce52df5eb0be" upstream="p-jb-mr1-release"/>
-	<project name="platform/hardware/qcom/keymaster" path="hardware/qcom/keymaster" revision="3816bf0dc2016895a4be4c550d52ce006a6d56db" upstream="p-jb-mr1-release"/>
-	<project name="platform/hardware/qcom/media" path="hardware/qcom/media" revision="7a716fd8484d06fe5b193f82bf8920e0dc63f3cc" upstream="p-jb-mr1-release"/>
-	<project name="platform/hardware/qcom/msm8960" path="hardware/qcom/msm8960" revision="1527a7f45985b21726df5dbcce10af54646d62c0" upstream="p-jb-mr1-release"/>
-	<project name="platform/hardware/qcom/power" path="hardware/qcom/power" revision="c0973cab514ca6476d01186d09076d3490c0d4cb" upstream="p-jb-mr1-release"/>
-	<project name="platform/hardware/qcom/sensors" path="hardware/qcom/sensors" revision="07c5bcdb36158e22d33bac02eecd83d4ff1fb2f8" upstream="p-jb-mr1-release"/>
-	<project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" revision="59d7a95be90328306ac2dfef31a5663f1f2d76fc" upstream="p-jb-mr1-release"/>
 	<project name="platform/hardware/ril" path="hardware/ril" revision="2f1fcdc40106fa31c61fc7b567d70e45fb26b168" upstream="p-jb-mr1-release"/>
-	<project name="platform/hardware/samsung_slsi/exynos5" path="hardware/samsung_slsi/exynos5" revision="7219980a19c026fb454c1decdd2eacd22691df6b" upstream="p-jb-mr1-release"/>
 	<project name="platform/hardware/ti/domx" path="hardware/ti/domx" revision="2319e7e2d6b50fed8d078891f5a2bdedcf4c49d6" upstream="p-jb-mr1-release"/>
 	<project name="platform/hardware/ti/omap3" path="hardware/ti/omap3" revision="efbb6b2de5fa16ef72bbf02526e3c0a7a6d63a4f" upstream="p-jb-mr1-release"/>
 	<project name="platform/hardware/ti/wpan" path="hardware/ti/wpan" revision="ac8a960a28d1288d94f372d31a919be67e7cec03" upstream="p-jb-mr1-release"/>
 	<project name="platform/libcore" path="libcore" revision="91dcd8e88f791e64177adff2212942240e4d05c6" upstream="p-jb-mr1-release"/>
 	<project name="platform/libnativehelper" path="libnativehelper" revision="73d3c2e3ed100f1d0ccc08a9675844bf8a0848fa" upstream="p-jb-mr1-release"/>
 	<project name="platform/ndk" path="ndk" revision="6d6807c76da40a9c9a27ea235c7518557c95219c" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="58b8a2b8822b7356f8da1d30f79cda6e775cef4c" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" revision="99dbc0da328372cacd53432b5c544878ed1596f8" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/Browser" path="packages/apps/Browser" revision="da87a23bf7d06d47d6f0ed0e04b3b7622b7db566" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/Calculator" path="packages/apps/Calculator" revision="6f8c058716866aecbd29b89064d3b1b76be47207" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/apps/Calendar" path="packages/apps/Calendar" revision="978bf16ae0d70a855779c46202c77fa487087702" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/Camera" path="packages/apps/Camera" revision="facee5c2b38eb07b50adc290e88a63a5281d0913" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" revision="9f47f5f4b29a2fd41881cb7f924120b5bca48ca4" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller" revision="e46af364c64b173ee83eac7b80c598a1583cb723" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/Contacts" path="packages/apps/Contacts" revision="59148c434c804878a69c0fd65405a785abdca9aa" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock" revision="be52ef2c2943bde50ee598cf2198937c7b3a9d83" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/Email" path="packages/apps/Email" revision="6a077f9f112efc60aa753f949915b38579ff94e2" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/Exchange" path="packages/apps/Exchange" revision="a564b819d2fb9025373b14a3493da103784c7655" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/apps/Gallery" path="packages/apps/Gallery" revision="2ff3681f5a1fe071b629a06ad846b9d93cb16211" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/apps/Gallery2" path="packages/apps/Gallery2" revision="38c765b4e803548f6f60c89c564e20eefa14cea2" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer" revision="e688d4d402ed98a6c82a1706c16894e6d59f458d" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain" revision="c8b0463643df1f1a4035d641e155f5e1cef8e1b0" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/Launcher2" path="packages/apps/Launcher2" revision="e7755b953d3e20019e5ae410facd4ecea0ab41bf" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera" revision="9d6aaa8c6818b41b4c356d78232206e8a0593c8a" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/apps/Mms" path="packages/apps/Mms" revision="458bc303ea5801ee4fe411e5a739a03dfde739ac" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/apps/Music" path="packages/apps/Music" revision="fd5c5d95fb718fb84a61eefc9b0da21c35445dd8" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX" revision="bc778ede573dc74646d42dfe96997f74b23ac61d" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/Nfc" path="packages/apps/Nfc" revision="fc807f8a8f4c86b1d44caa6d05d0b9dbd6fc376f" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/OMAPCamera" path="packages/apps/OMAPCamera" revision="f9ba77381f10160eb0fe5fb4ed1d3489d71ba841" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/PackageInstaller" path="packages/apps/PackageInstaller" revision="fc11d8a51256dc396197cd8d82293793fafbf66d" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/Phone" path="packages/apps/Phone" revision="628c3960c9e5574fe47dbdf482d85f27af1d8916" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/Protips" path="packages/apps/Protips" revision="d3815b7cfdd90ba39b7deafc758085f0a21fdd88" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/Provision" path="packages/apps/Provision" revision="10c3003a034b9c18b7d17e967135088b95b9ca31" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" revision="c7e09795ecee56d735bf966a162dd89ad9be597a" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/Settings" path="packages/apps/Settings" revision="7daeffb82e8ead931a4c7798c422ce5439051c0d" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/SmartCardService" path="packages/apps/SmartCardService" revision="29eae320a4bd222b5ff1c092f84f1aebba88d0b7" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder" revision="3c7d3815e2c3d7f0c95ef09766f40ce35713e362" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" revision="4db997871e3f4c3f84660815096e5276b47c5c91" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/apps/SpeechRecorder" path="packages/apps/SpeechRecorder" revision="536aa74ff3a77186bef29dc9333a34688fa59d13" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/Stk" path="packages/apps/Stk" revision="ac72bff9a1fdb69260e53b277547bf4e32e8e43f" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/Tag" path="packages/apps/Tag" revision="5f90b8ac1de415b3081525936b094e9a326c659e" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/apps/VideoEditor" path="packages/apps/VideoEditor" revision="959531c6e384b9ae402586e97ac5228c7f3d5b6a" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/apps/VoiceDialer" path="packages/apps/VoiceDialer" revision="7559387a31a09a5899d2eceeb52bcff9dbadc9cc" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/experimental" path="packages/experimental" revision="1e0c48bb3760be078159c785396621e90d275ae0" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/inputmethods/LatinIME" path="packages/inputmethods/LatinIME" revision="43109c709bfb288ddcd4bce091d60427e83932ce" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/inputmethods/OpenWnn" path="packages/inputmethods/OpenWnn" revision="59aefa242169b7a51c2381daee58ff22fd1834ce" upstream="p-jb-mr1-release"/>
@@ -331,17 +292,7 @@
 	<project name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider" revision="1094b638d8656feef13dae7607b41c8cf58bad9d" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/providers/UserDictionaryProvider" path="packages/providers/UserDictionaryProvider" revision="c387029cf67358eea21f9fd60e6cac60049839b7" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/screensavers/Basic" path="packages/screensavers/Basic" revision="a4efc8cf3f8c2cc51adb4032da208cb2c3d448de" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/screensavers/PhotoTable" path="packages/screensavers/PhotoTable" revision="8edf2719de41fbb7353db0012078bcfb63231a2c" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/screensavers/WebView" path="packages/screensavers/WebView" revision="6e0a80f6faed6191acc8ce1b6c79eada09e9e042" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/wallpapers/Basic" path="packages/wallpapers/Basic" revision="087f4a16d91506a326e7587522d27a1d3986727f" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/wallpapers/Galaxy4" path="packages/wallpapers/Galaxy4" revision="9cc201742a70ab0879965d23d2c2b33ee6c18e70" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/wallpapers/HoloSpiral" path="packages/wallpapers/HoloSpiral" revision="dcc502f8570a018d6cdf8ba8491409f79598b89d" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker" revision="aee94ba23ea2ebc947a1620d8f682723111b44d8" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/wallpapers/MagicSmoke" path="packages/wallpapers/MagicSmoke" revision="0bc134c3cc8216af2ca277fa69c2f81dfe7aa406" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/wallpapers/MusicVisualization" path="packages/wallpapers/MusicVisualization" revision="f6987612ffa546d2397df73d2b8cde747544db1d" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/wallpapers/NoiseField" path="packages/wallpapers/NoiseField" revision="2215802fd84dfb4dfe5b11c05aacd6f1d1eb890f" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/wallpapers/PhaseBeam" path="packages/wallpapers/PhaseBeam" revision="5d8b4d21d4e85754608be68e34b05486079a01d4" upstream="p-jb-mr1-release"/>
-	<project name="platform/pdk" path="pdk" revision="4c9d0b3b746700dd5398edd65510af1f6db4b752" upstream="p-jb-mr1-release"/>
 	<project groups="darwin" name="platform/prebuilts/clang/darwin-x86/3.1" path="prebuilts/clang/darwin-x86/3.1" revision="426233405bef3c7c825095ab14256c3773894b9b" upstream="p-jb-mr1-release"/>
 	<project groups="darwin" name="platform/prebuilts/clang/darwin-x86/3.2" path="prebuilts/clang/darwin-x86/3.2" revision="af856d77b3cbb1f6afccdc531bee991403c28907" upstream="p-jb-mr1-release"/>
 	<project groups="linux" name="platform/prebuilts/clang/linux-x86/3.1" path="prebuilts/clang/linux-x86/3.1" revision="e95b4ce22c825da44d14299e1190ea39a5260bde" upstream="p-jb-mr1-release"/>
@@ -370,7 +321,5 @@
 	<project name="platform/system/security" path="system/security" revision="cd8df62842b81c93022feabfacda8efd257e1754" upstream="p-jb-mr1-release"/>
 	<project name="platform/system/vold" path="system/vold" revision="982304db9932dad55cbb43bc8102e52076dac5fa" upstream="p-jb-mr1-release"/>
 	<project groups="toolsbuild" name="platform/tools/build" path="tools/build" revision="7eff27462d5989acf22839575ff0a8978e3369b5" upstream="p-jb-mr1-release"/>
-	<project name="platform/tools/motodev" path="tools/motodev" revision="6ddc6008c328cdb9f03e71bdbb44f48586026c43" upstream="p-jb-mr1-release"/>
-
 </manifest>
 
