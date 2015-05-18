@@ -265,7 +265,6 @@
 	<project name="platform/packages/apps/PackageInstaller" path="packages/apps/PackageInstaller" revision="fc11d8a51256dc396197cd8d82293793fafbf66d" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/Phone" path="packages/apps/Phone" revision="628c3960c9e5574fe47dbdf482d85f27af1d8916" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/Protips" path="packages/apps/Protips" revision="d3815b7cfdd90ba39b7deafc758085f0a21fdd88" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/apps/Provision" path="packages/apps/Provision" revision="10c3003a034b9c18b7d17e967135088b95b9ca31" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/Settings" path="packages/apps/Settings" revision="7daeffb82e8ead931a4c7798c422ce5439051c0d" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/SmartCardService" path="packages/apps/SmartCardService" revision="29eae320a4bd222b5ff1c092f84f1aebba88d0b7" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" revision="4db997871e3f4c3f84660815096e5276b47c5c91" upstream="p-jb-mr1-release"/>
@@ -284,8 +283,6 @@
 	<project name="platform/packages/providers/PartnerBookmarksProvider" path="packages/providers/PartnerBookmarksProvider" revision="96d0a80af45923767baf449fc8c735c2f71d64ae" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider" revision="1094b638d8656feef13dae7607b41c8cf58bad9d" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/providers/UserDictionaryProvider" path="packages/providers/UserDictionaryProvider" revision="c387029cf67358eea21f9fd60e6cac60049839b7" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/screensavers/Basic" path="packages/screensavers/Basic" revision="a4efc8cf3f8c2cc51adb4032da208cb2c3d448de" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/wallpapers/Basic" path="packages/wallpapers/Basic" revision="087f4a16d91506a326e7587522d27a1d3986727f" upstream="p-jb-mr1-release"/>
 	<project groups="darwin" name="platform/prebuilts/clang/darwin-x86/3.1" path="prebuilts/clang/darwin-x86/3.1" revision="426233405bef3c7c825095ab14256c3773894b9b" upstream="p-jb-mr1-release"/>
 	<project groups="darwin" name="platform/prebuilts/clang/darwin-x86/3.2" path="prebuilts/clang/darwin-x86/3.2" revision="af856d77b3cbb1f6afccdc531bee991403c28907" upstream="p-jb-mr1-release"/>
 	<project groups="linux" name="platform/prebuilts/clang/linux-x86/3.1" path="prebuilts/clang/linux-x86/3.1" revision="e95b4ce22c825da44d14299e1190ea39a5260bde" upstream="p-jb-mr1-release"/>
