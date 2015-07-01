@@ -7,6 +7,7 @@
 	<remote name="omapzoom" fetch="git://git.omapzoom.org/" />
 	<remote name="sciaps" fetch="ssh://git@github.com/SciAps" />
 	<remote name="bwford" fetch="ssh://git@github.com/bwford" />
+	<remote name="rdrjr" fetch="ssh://git@github.com/rdrjr" />
 	<remote name="cyanogenmod" fetch="ssh://git@github.com/CyanogenMod" />
 
 	<default revision="p-jb-mr1-release"
@@ -25,9 +26,9 @@
 	<project remote="sciaps" path="external/fpgaprogrammer" name="fpgaprogrammer" revision="master" />
 	<project remote="sciaps" path="system/core" name="android-system-core" revision="libz5004.2.2" />
 
-	<project path="device/sciaps/android-device-libz500" remote="sciaps" name="android-device-libz500" revision="v4.2.2" />
-	<project remote="sciaps" path="vendor/sciaps" name="vendor-sciaps" revision="libz500" />
-	<project remote="sciaps" path="kernel" name="android-kernel" revision="dev" />
+	<project path="device/sciaps/libz500" remote="bwford" name="android-device-base" revision="v4.2.2" />
+	<project remote="bwford" path="vendor/sciaps" name="vendor-sciaps" revision="libz500" />
+	<project remote="rdrjr" path="kernel" name="android-kernel" revision="ksp5014" />
 
 	<project name="android-ti-omap4xxx.git" path="hardware/ti/omap4xxx" remote="sciaps" revision="libz5004.2.2" />
 	<project remote="sciaps" name="hardware_ti_wlan" path="hardware/ti/wlan" revision="libz5004.2.2" />
