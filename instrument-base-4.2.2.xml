@@ -267,7 +267,7 @@
 	<project name="platform/packages/apps/Phone" path="packages/apps/Phone" revision="628c3960c9e5574fe47dbdf482d85f27af1d8916" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/Protips" path="packages/apps/Protips" revision="d3815b7cfdd90ba39b7deafc758085f0a21fdd88" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/Provision" path="packages/apps/Provision" revision="10c3003a034b9c18b7d17e967135088b95b9ca31" upstream="p-jb-mr1-release"/>
-	<project name="platform/packages/apps/Settings" path="packages/apps/Settings" revision="7daeffb82e8ead931a4c7798c422ce5439051c0d" upstream="p-jb-mr1-release"/>
+	<project path="packages/apps/Settings" remote="bwford" name="Settings" revision="master"/>
 	<project name="platform/packages/apps/SmartCardService" path="packages/apps/SmartCardService" revision="29eae320a4bd222b5ff1c092f84f1aebba88d0b7" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" revision="4db997871e3f4c3f84660815096e5276b47c5c91" upstream="p-jb-mr1-release"/>
 	<project name="platform/packages/apps/Stk" path="packages/apps/Stk" revision="ac72bff9a1fdb69260e53b277547bf4e32e8e43f" upstream="p-jb-mr1-release"/>
