@@ -26,7 +26,6 @@
 
 	<project path="device/sciaps" remote="sciaps" name="sciaps-device" revision="master" />
 	<project remote="sciaps" path="vendor/sciaps" name="vendor-sciaps" revision="libz500" />
-	<project path="vendor/sciaps/LIBZService" name="LIBZService" remote="sciaps" revision="libz5004.2.2" />
 	<project path="vendor/sciaps/LIBZFactoryMode" name="LIBZFactoryMode" remote="sciaps" revision="libz5004.2.2" />
 	<project path="vendor/sciaps/LIBZHome" name="LIBZHome" remote="sciaps" revision="libz5004.2.2" />
 	<project path="vendor/sciaps/LIBZAlloyMatch" name="AndroidLibs" remote="sciaps" revision="libz5004.2.2" />
