@@ -19,7 +19,7 @@
 	<project remote="cyanogenmod" name="android_packages_apps_CMFileManager" path="packages/apps/CMFileManager" revision="cm-10.1" />
 	<project path="busybox-android" name="busybox-android" remote="sciaps" revision="libz5004.2.2"/>
 	<project path="device/ti/proprietary-open" remote="sciaps" name="android-ti-proprietary-open" revision="libz5004.2.2" />
-	
+
 	<project remote="sciaps" path="barebox" name="barebox" revision="phytec-ksp5012" />
 	<project remote="sciaps" path="external/fpgaprogrammer" name="fpgaprogrammer" revision="master" />
 	<project remote="sciaps" path="system/core" name="android-system-core" revision="libz5004.2.2" />
@@ -32,7 +32,7 @@
 	<project path="vendor/sciaps/LIBZAlloyMatch" name="AndroidLibs" remote="sciaps" revision="libz5004.2.2" />
 	<project path="vendor/sciaps/LIBZAlloySpec" name="LIBZAlloySpec" remote="sciaps" revision="libz5004.2.2" />
 	<project path="vendor/sciaps/Updater" name="Updater" remote="sciaps" revision="master" />
-	<project remote="sciaps" path="kernel" name="android-kernel" revision="dev" />
+	<project remote="sciaps" path="kernel" name="android-kernel" revision="libz" />
 
 	<project name="android-ti-omap4xxx.git" path="hardware/ti/omap4xxx" remote="sciaps" revision="libz5004.2.2" />
 	<project remote="sciaps" name="hardware_ti_wlan" path="hardware/ti/wlan" revision="libz5004.2.2" />
@@ -372,4 +372,3 @@
 	<project name="platform/tools/motodev" path="tools/motodev" revision="6ddc6008c328cdb9f03e71bdbb44f48586026c43" upstream="p-jb-mr1-release"/>
 
 </manifest>
-
