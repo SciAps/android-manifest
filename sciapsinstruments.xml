@@ -33,6 +33,7 @@
 	<project path="vendor/sciaps/Updater" name="Updater" remote="sciaps" revision="master" />
 	<project path="vendor/sciaps/XRFAndroid" name="XRFAndroid" remote="sciaps" revision="firmware" />
 	<project remote="sciaps" path="kernel/sciaps/phenix" name="android-kernel" revision="dev" />
+	<project remote="sciaps" path="external/libusb" name="libusb" revision="sciaps"/>
 
 	<project name="android-ti-omap4xxx.git" path="hardware/ti/omap4xxx" remote="sciaps" revision="libz5004.2.2" />
 	<project remote="sciaps" name="hardware_ti_wlan" path="hardware/ti/wlan" revision="libz5004.2.2" />
@@ -160,7 +161,6 @@
 	<project name="platform/external/libppp" path="external/libppp" revision="706e567fc5ff6b79738a5f470e5aa7b2cae76459" upstream="p-jb-mr1-release"/>
 	<project name="platform/external/libselinux" path="external/libselinux" revision="895b446e8b4844f2da7354e74d5d96cc7f4418f3" upstream="p-jb-mr1-release"/>
 	<project name="platform/external/libsepol" path="external/libsepol" revision="6617731185f5d7c899b376d1bfa2dea11eb494a0" upstream="p-jb-mr1-release"/>
-	<project name="platform/external/libusb" path="external/libusb" revision="2801917fe150393d4f4a354165fe89550ae22613" upstream="p-jb-mr1-release"/>
 	<project name="platform/external/libusb-compat" path="external/libusb-compat" revision="94867ba54eb7faa8efca81cf2214d00bb9143d27" upstream="p-jb-mr1-release"/>
 	<project name="platform/external/libvorbis" path="external/libvorbis" revision="de559619fd4dd0d2d9608436696fd44bdf74eba8" upstream="p-jb-mr1-release"/>
 	<project name="platform/external/libvpx" path="external/libvpx" revision="b9c4e676b7be3cf3a9e45e06d71bf0ca92344a5b" upstream="p-jb-mr1-release"/>
