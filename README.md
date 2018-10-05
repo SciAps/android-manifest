@@ -91,7 +91,7 @@ cd ~/Downloads && unzip android-studio-ide-*.zip \
 6. Use Defaults, keep clicking Next
 7. On the Welcome to Android Studio screen, click the Configure option at the bottom and open the SDK Manager
 8. Inside the SDK Manager, check the boxes for all API levels 10-19 and up under "SDK Platforms"; hit apply
-9. Switch to the "SDK Tools" tab and check the boxes for CMake and all non-Obsolete >= 20.0.0 Android SDK Build-Tools (you may have to check Show Package Details); hit apply (do not install NDK here, that comes next)
+9. Switch to the "SDK Tools" tab and check the boxes for CMake and Android SDK Build-Tools 20.0.0 (you may have to check Show Package Details); hit apply (do NOT install NDK here, that comes next)
 
 ### Download Android NDK r12b
 ```bash
