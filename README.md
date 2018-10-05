@@ -19,7 +19,7 @@ https://source.android.com/source/requirements
 ### Install Necessary Tools via apt-get
 ```bash
 sudo apt-get update \
-&& sudo apt-get install build-essential libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386 git-core gnupg flex bison gperf zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip libswitch-perl default-jre u-boot-tools mtd-utils lzop xorg-dev libopenal-dev libglew-dev libalut-dev xclip python ruby-dev openvpn \
+&& sudo apt-get -y install build-essential libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386 git-core gnupg flex bison gperf zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip libswitch-perl default-jre u-boot-tools mtd-utils lzop xorg-dev libopenal-dev libglew-dev libalut-dev xclip python ruby-dev openvpn \
 && sudo apt-get -f install
 ```
 
