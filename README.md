@@ -152,6 +152,8 @@ git config --global user.name "Stephen Gowen" \
 3. Click *Add SSH key*
 
 ### Initialize and repo sync the SciAps fork of the Android 4.2.2 Firmware
+
+Run the following:
 ```bash
 sudo mkdir -p /opt/aosp \
 && cd /opt \
@@ -159,6 +161,12 @@ sudo mkdir -p /opt/aosp \
 && cd aosp \
 && repo --color=never init -u git@github.com:SciAps/android-manifest.git \
 && repo sync -f -c -j 4 --no-clone-bundle --force-broken
+```
+
+If the above command does not immediately start git cloning, CTRL+C, run the following, and then try the above again:
+```bash
+cd /opt/aosp \
+&& rm -rf .repo
 ```
 
 ### Entering the build environment and execution
