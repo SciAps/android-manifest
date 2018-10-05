@@ -78,27 +78,20 @@ cd ~/Downloads \
 
 ### Download and Install Android Studio
 1. https://developer.android.com/studio/index.html
-2. Once downloaded, unzip the file: 
+2. Click the big download button and accept the license
+3. When prompted, just click "Save File"
+4. Once downloaded, run the following: 
 ```bash
-cd ~/Downloads && unzip android-studio-ide-*.zip
+cd ~/Downloads && unzip android-studio-ide-*.zip \
+&& sudo mv ~/Downloads/android-studio /opt/ \
+&& cd ~/Downloads && rm android-studio-ide-*.zip \
+&& /opt/android-studio/bin/studio.sh &
 ```
-3. Move the android-studio folder to your /opt/ folder: 
-```bash
-sudo mv ~/Downloads/android-studio /opt/
-```
-4. Delete the zip of course, unless you want to clutter your file system: 
-```bash
-cd ~/Downloads && rm android-studio-ide-*.zip
-```
-5. Run Android Studio: 
-```bash
-/opt/android-studio/bin/studio.sh &
-```
-6. In the Android Studio Setup Wizard, click Custom
-7. Use Defaults, keep clicking Next
-8. On the Welcome to Android Studio screen, click the Configure option at the bottom and open the SDK Manager
-9. Inside the SDK Manager, check the boxes for all API levels 10 and up under "SDK Platforms"; hit apply
-10. Switch to the "SDK Tools" tab and check the boxes for CMake and all non-Obsolete >= 20.0.0 Android SDK Build-Tools (you may have to check Show Package Details); hit apply (do not install NDK here, that comes next)
+5. In the Android Studio Setup Wizard, click Custom
+6. Use Defaults, keep clicking Next
+7. On the Welcome to Android Studio screen, click the Configure option at the bottom and open the SDK Manager
+8. Inside the SDK Manager, check the boxes for all API levels 10 and up under "SDK Platforms"; hit apply
+9. Switch to the "SDK Tools" tab and check the boxes for CMake and all non-Obsolete >= 20.0.0 Android SDK Build-Tools (you may have to check Show Package Details); hit apply (do not install NDK here, that comes next)
 
 ### Download Android NDK r12b
 ```bash
