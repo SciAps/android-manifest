@@ -90,7 +90,7 @@ cd ~/Downloads && unzip android-studio-ide-*.zip \
 5. In the Android Studio Setup Wizard, click Custom
 6. Use Defaults, keep clicking Next
 7. On the Welcome to Android Studio screen, click the Configure option at the bottom and open the SDK Manager
-8. Inside the SDK Manager, check the boxes for all API levels 10 and up under "SDK Platforms"; hit apply
+8. Inside the SDK Manager, check the boxes for all API levels 10-19 and up under "SDK Platforms"; hit apply
 9. Switch to the "SDK Tools" tab and check the boxes for CMake and all non-Obsolete >= 20.0.0 Android SDK Build-Tools (you may have to check Show Package Details); hit apply (do not install NDK here, that comes next)
 
 ### Download Android NDK r12b
@@ -136,11 +136,20 @@ Hit CTRL+X and then Y to save and exit, and your swap is good to go.
 ### Make sure you are authorized for SciAps repositories
 [more on this here](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#platform-linux)
 
-Also, be sure to set your user name and email in git config:
+Before running this command, change "Stephen Gowen" and "dev.sgowen@gmail.com" accordingly:
 ```bash
-git config --global user.name "Stephen Gowen"
-git config --global user.email "dev.sgowen@gmail.com"
+git config --global user.name "Stephen Gowen" \
+&& git config --global user.email "dev.sgowen@gmail.com" \
+&& ssh-keygen -t rsa -N "" -b 4096 -C "dev.sgowen@gmail.com" -f ~/.ssh/id_rsa \
+&& eval "$(ssh-agent -s)" \
+&& ssh-add ~/.ssh/id_rsa \
+&& xclip -sel clip < ~/.ssh/id_rsa.pub \
+&& xdg-open https://github.com/settings/ssh/new
 ```
+
+1. Paste into the Key box
+2. Type Ubuntu AOSP into the Title box
+3. Click *Add SSH key*
 
 ### Initialize and repo sync the SciAps fork of the Android 4.2.2 Firmware
 ```bash
