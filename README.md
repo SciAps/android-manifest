@@ -91,7 +91,7 @@ cd ~/Downloads && unzip android-studio-ide-*.zip \
 6. Use Defaults, keep clicking Next
 7. On the Welcome to Android Studio screen, click the Configure option at the bottom and open the SDK Manager
 8. Inside the SDK Manager, check the boxes for all API levels 10-19 and up under "SDK Platforms"; hit apply
-9. Switch to the "SDK Tools" tab and check the boxes for CMake and Android SDK Build-Tools 20.0.0 (you may have to check Show Package Details); hit apply (do NOT install NDK here, that comes next)
+9. Switch to the "SDK Tools" tab and check the boxes for CMake and Android SDK Build-Tools *20.0.0* and *24.0.2* (check Show Package Details to see all the options); hit apply (do NOT install NDK here, that comes next)
 
 ### Download Android NDK r12b
 ```bash
@@ -109,7 +109,10 @@ rm -rf ~/Android/Sdk/ndk-bundle/ \
 sudo sh -c 'echo "PATH=~/bin:/usr/lib/jvm/java-6-oracle/bin:$PATH" >> ~/.profile' \
 && sudo sh -c 'echo "JAVA_HOME=/usr/lib/jvm/java-6-oracle" >> /etc/environment' \
 && sudo sh -c 'echo "ANDROID_HOME=$HOME/Android/Sdk" >> /etc/environment' \
-&& sudo sh -c 'echo "ANDROID_NDK_HOME=$HOME/Android/Sdk/ndk-bundle/" >> /etc/environment'
+&& sudo sh -c 'echo "ANDROID_NDK_HOME=$HOME/Android/Sdk/ndk-bundle/" >> /etc/environment' \
+&& sudo sh -c 'echo "10.98.100.24    jenkins.sciaps.local" >> /etc/hosts' \
+&& sudo sh -c 'echo "10.98.100.25    jenkins2.sciaps.local" >> /etc/hosts' \
+&& sudo sh -c 'echo "10.98.100.24    maven.sciaps.local" >> /etc/hosts'
 ```
 
 Logout and Login again
@@ -187,7 +190,8 @@ make -j4 \
 && make root.ubi
 ```
 
-### Regarding Errors...
+### If you encounter any errors while following this guide...
 
-1. If you encounter any errors while following this guide, UPDATE this guide.
-2. If you encounter any errors while following this guide that can be resolved via an update to ANY of the repositories, make a Pull Request for that change and a Pull Request for https://github.com/SciAps/android-manifest (to update the corresponding repository pointer)
+1. UPDATE this guide.
+2. If the error can be resolved via an *update* to one of the repositories, make the change on the firmware branch (create it if it doesn't exist) 
+3. If a change was made to a repo, be sure to also update https://github.com/SciAps/android-manifest/blob/master/sciapsinstruments.xml to change the corresponding repository pointer to "firmware" if it is not already set
