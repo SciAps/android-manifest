@@ -3,6 +3,9 @@
 ### Additional Resources
 https://source.android.com/source/requirements
 
+### Download Ubuntu 16.04 iso
+https://www.ubuntu.com/download/alternative-downloads
+
 ### Preliminary steps for macOS Parallels users only
 1. Open the Parallels Control Center and click on the *+* symbol in the top-right corner
 2. Select the "Install Windows or another OS from DVD or image file" and click *Continue*
@@ -91,7 +94,7 @@ cd ~/Downloads && unzip android-studio-ide-*.zip \
 6. Use Defaults, keep clicking Next
 7. On the Welcome to Android Studio screen, click the Configure option at the bottom and open the SDK Manager
 8. Inside the SDK Manager, check the boxes for all API levels 10-19 and up under "SDK Platforms"; hit apply
-9. Switch to the "SDK Tools" tab and check the boxes for CMake and Android SDK Build-Tools *20.0.0* and *24.0.2* (check Show Package Details to see all the options); hit apply (do NOT install NDK here, that comes next)
+9. Switch to the "SDK Tools" tab and check the boxes for CMake and Android SDK Build-Tools *20.0.0*, *21.1.2*, and *24.0.2* (check Show Package Details to see all the options); hit apply (do NOT install NDK here, that comes next)
 
 ### Download Android NDK r12b
 ```bash
