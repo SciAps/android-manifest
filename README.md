@@ -63,7 +63,7 @@ curl https://s3.amazonaws.com/sciaps/flatc > ~/bin/flatc \
 ### Download gradle.properties file for your root ".gradle" folder
 ```bash
 cd ~/Downloads \
-&& wget https://s3.amazonaws.com/sciaps/gradle.properties \
+&& wget https://s3.us-east-2.amazonaws.com/sciaps-firmware-dependencies/gradle.properties \
 && mkdir -p ~/.gradle/ \
 && sudo mv ~/Downloads/gradle.properties ~/.gradle/
 ```
