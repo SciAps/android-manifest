@@ -52,8 +52,9 @@ mkdir ~/bin \
 
 ### Download flatc
 ```bash
-sudo curl https://s3.amazonaws.com/sciaps/flatc > /opt/flatc \
-&& chmod a+x /opt/flatc
+curl https://s3.amazonaws.com/sciaps/flatc > ~/Downloads/flatc \
+&& sudo mv ~/Downloads/flatc /opt/flatc \
+&& sudo chmod a+x /opt/flatc
 ```
 
 ### Download gradle.properties file for your root ".gradle" folder
