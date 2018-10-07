@@ -151,7 +151,7 @@ git config --global user.name "Stephen Gowen" \
 1. Log in if necessary and then Paste your clipboard into the Key box
 2. Type Ubuntu AOSP into the Title box
 3. Click *Add SSH key*
-4. Logout and Login again
+4. Restart your Ubuntu VM
 
 ### Initialize and repo sync the SciAps fork of the Android 4.2.2 Firmware
 ```bash
