@@ -115,8 +115,6 @@ sudo sh -c 'echo "PATH=~/bin:/usr/lib/jvm/java-6-oracle/bin:$PATH" >> ~/.profile
 && sudo sh -c 'echo "10.98.100.24    maven.sciaps.local" >> /etc/hosts'
 ```
 
-Logout and Login again
-
 ### Unless you have 16G of Ram, you will need swap memory
 [more on this here](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04)
 ```bash
@@ -153,11 +151,7 @@ git config --global user.name "Stephen Gowen" \
 1. Log in if necessary and then Paste your clipboard into the Key box
 2. Type Ubuntu AOSP into the Title box
 3. Click *Add SSH key*
-
-### Connect to VPN (if outside of the office)
-```bash
-sudo openvpn --config file_you_get_from_gary_lortie.ovpn
-```
+4. Logout and Login again
 
 ### Initialize and repo sync the SciAps fork of the Android 4.2.2 Firmware
 ```bash
@@ -176,6 +170,11 @@ cd /opt/aosp \
 ```
 
 ### Entering the build environment and execution
+If outside of the office, connect to VPN first before attempting to build
+```bash
+sudo openvpn --config file_you_get_from_gary_lortie.ovpn
+```
+
 ```bash
 cd /opt/aosp \
 && . build/envsetup.sh \
