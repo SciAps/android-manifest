@@ -186,8 +186,14 @@ cd /opt/aosp \
 && m root.ubi
 ```
 If building firmware for LIBZ or Raman, the lunch command above can be replaced by:
-1. lunch *full_libz100-eng* for LIBZ
-2. lunch *full_chem200-eng* for Raman
+1. LIBZ
+```bash
+lunch full_libz100-eng
+```
+2. Raman
+```bash
+lunch full_chem200-eng
+```
 
 ### If you encounter any errors while following this guide...
 
