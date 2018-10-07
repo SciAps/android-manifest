@@ -157,9 +157,12 @@ git config --global user.name "Stephen Gowen" \
 2. Type Ubuntu AOSP into the Title box
 3. Click *Add SSH key*
 
-### Initialize and repo sync the SciAps fork of the Android 4.2.2 Firmware
+### Connect to VPN (if outside of the office)
+```bash
+sudo openvpn --config file_you_get_from_gary_lortie.ovpn
+```
 
-Run the following:
+### Initialize and repo sync the SciAps fork of the Android 4.2.2 Firmware
 ```bash
 sudo mkdir -p /opt/aosp \
 && cd /opt \
