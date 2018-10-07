@@ -183,7 +183,7 @@ cd /opt/aosp \
 && rm -rf root* \
 && rm -rf /opt/aosp/out/target/product/phenix/stagingts \
 && rm -rf /opt/aosp/out/target/product/phenix/system/app \
-&& m --keep-going \
+&& m \
 && m root.ubi
 ```
 If building firmware for LIBZ, the lunch command above can be replaced by:
