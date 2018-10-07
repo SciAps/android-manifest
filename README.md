@@ -178,19 +178,16 @@ Build
 ```bash
 cd /opt/aosp \
 && . build/envsetup.sh \
-&& lunch
+&& lunch full_phenix-eng \
+&& rm -rf root* \
+&& rm -rf /opt/aosp/out/target/product/phenix/stagingts \
+&& rm -rf /opt/aosp/out/target/product/phenix/system/app \
+&& m  --keep-going \
+&& m root.ubi
 ```
-
-then select either:
-1. *full_phenix-eng* for XRF
-2. *full_libz100-eng* for LIBZ
-3. *full_chem200-eng* for Raman
-
-### Build the ubi
-```bash
-make -j4 \
-&& make root.ubi
-```
+If building firmware for LIBZ or Raman, the lunch command above can be replaced by:
+1. lunch *full_libz100-eng* for LIBZ
+2. lunch *full_chem200-eng* for Raman
 
 ### If you encounter any errors while following this guide...
 
