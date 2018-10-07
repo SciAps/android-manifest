@@ -43,14 +43,10 @@ cd ~/Downloads/ \
 && sudo ln -s /usr/bin/make-3.82/make /usr/bin/make
 ```
 
-### Create User Bin Folder
-```bash
-mkdir ~/bin
-```
-
 ### Download Google's Repo Tool
 ```bash
-curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo \
+mkdir ~/bin \
+&& curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo \
 && chmod a+x ~/bin/repo
 ```
 
