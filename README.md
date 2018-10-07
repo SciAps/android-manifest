@@ -56,8 +56,8 @@ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo \
 
 ### Download flatc
 ```bash
-curl https://s3.amazonaws.com/sciaps/flatc > ~/bin/flatc \
-&& chmod a+x ~/bin/flatc
+sudo curl https://s3.amazonaws.com/sciaps/flatc > /opt/flatc \
+&& chmod a+x /opt/flatc
 ```
 
 ### Download gradle.properties file for your root ".gradle" folder
