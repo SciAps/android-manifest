@@ -184,7 +184,7 @@ cd /opt/aosp \
 && rm -rf /opt/aosp/out/target/product/phenix/stagingts \
 && rm -rf /opt/aosp/out/target/product/phenix/system/app \
 && m \
-&& find out/target/product/phenix -type d -exec chmod 755 {} \; \
+&& chmod -R 777 out/target/product/phenix \
 && m root.ubi
 ```
 If building firmware for LIBZ, the lunch command above can be replaced by:
