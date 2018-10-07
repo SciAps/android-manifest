@@ -95,6 +95,7 @@ cd ~/Downloads && unzip android-studio-ide-*.zip \
 ### Download Android NDK r12b
 ```bash
 rm -rf ~/Android/Sdk/ndk-bundle/ \
+&& cd ~/Downloads/ \
 && curl -o android-ndk.zip -L https://dl.google.com/android/repository/android-ndk-r12b-linux-x86_64.zip \
 && sudo unzip android-ndk.zip -d ~/Android/Sdk/ \
 && mv ~/Android/Sdk/android-ndk-r12b ~/Android/Sdk/ndk-bundle \
