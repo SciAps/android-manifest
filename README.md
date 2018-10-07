@@ -174,7 +174,7 @@ If outside of the office, connect to VPN first before attempting to build
 ```bash
 sudo openvpn --config file_you_get_from_gary_lortie.ovpn
 ```
-
+Build
 ```bash
 cd /opt/aosp \
 && . build/envsetup.sh \
