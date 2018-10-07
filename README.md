@@ -181,8 +181,7 @@ cd /opt/aosp \
 && . build/envsetup.sh \
 && lunch full_phenix-eng \
 && rm -rf root* \
-&& rm -rf /opt/aosp/out/target/product/phenix/stagingts \
-&& rm -rf /opt/aosp/out/target/product/phenix/system/app \
+&& rm -rf /opt/aosp/out/target/product \
 && m \
 && chmod -R 777 out/target/product/phenix \
 && m root.ubi
