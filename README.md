@@ -167,17 +167,11 @@ sudo mkdir -p /opt/aosp \
 ```
 
 ### Entering the build environment and execution
-If outside of the office, connect to VPN first before attempting to build
-```bash
-sudo openvpn --config file_you_get_from_gary_lortie.ovpn
-```
-Open a new Terminal and run the following:
 ```bash
 cd /opt/aosp \
 && . build/envsetup.sh \
 && lunch full_phenix-eng \
 && m \
-&& chmod -R 777 out/target/product/phenix \
 && m root.ubi
 ```
 If building firmware for LIBZ, the lunch command above can be replaced by:
