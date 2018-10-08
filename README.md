@@ -163,7 +163,7 @@ sudo mkdir -p /opt/aosp \
 && sudo chmod 777 aosp \
 && cd aosp \
 && repo --color=never init -u git@github.com:SciAps/android-manifest.git \
-&& repo sync -f -c -j 4 --no-clone-bundle --force-broken
+&& repo sync -f -c -j 4 --no-clone-bundle
 ```
 
 ### Entering the build environment and execution
