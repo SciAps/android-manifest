@@ -18,6 +18,7 @@ https://www.ubuntu.com/download/alternative-downloads
 9. Under "Hard Disk", open the "Advanced Settings" and click on *Properties*
 10. Drag the slider to 512 GB if you can and click *Apply*
 11. Close the "Configuration" window and click *Continue*
+12. Once Ubuntu is up and running, install Parallels Tools by clicking on the yellow icon in the top-right corner of the Ubuntu VM window
 
 ### Install Necessary Tools via apt-get
 ```bash
