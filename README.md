@@ -192,8 +192,8 @@ lunch full_chem200-eng
 ```
 
 Artifact File Sizes:
-1. Final *root.ubi* should be 190,054,400 bytes (190.1 MB on disk)
-2. Final *root.ubifs* should be 183,861,248 bytes (183.9 MB on disk)
+1. Final *root.ubi* should be 190,185,472 bytes (201.4 MB on disk)
+2. Final *root.ubifs* should be 183,988,224 bytes (184.6 MB on disk)
 
 ### If you encounter any errors while following this guide...
 
