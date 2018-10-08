@@ -150,7 +150,7 @@ git config --global user.name "Stephen Gowen" \
 && xdg-open https://github.com/settings/ssh/new
 ```
 
-1. Log in if necessary and then Paste your clipboard into the Key box
+1. Log in to GitHub, and then paste your clipboard into the Key box
 2. Type Ubuntu AOSP into the Title box
 3. Click *Add SSH key*
 4. Restart your Ubuntu VM
