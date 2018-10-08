@@ -166,7 +166,7 @@ sudo mkdir -p /opt/aosp \
 && repo sync -f -c -j 4 --no-clone-bundle
 ```
 
-### Entering the build environment and execution
+### Enter build environment and make firmware image
 ```bash
 cd /opt/aosp \
 && . build/envsetup.sh \
