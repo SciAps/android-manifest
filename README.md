@@ -166,12 +166,6 @@ sudo mkdir -p /opt/aosp \
 && repo sync -f -c -j 4 --no-clone-bundle --force-broken
 ```
 
-If the above command does not immediately start git cloning, CTRL+C, run the following, and then try the above again:
-```bash
-cd /opt/aosp \
-&& rm -rf .repo
-```
-
 ### Entering the build environment and execution
 If outside of the office, connect to VPN first before attempting to build
 ```bash
