@@ -197,8 +197,9 @@ If building firmware for Raman, the lunch command above can be replaced by:
 lunch full_chem200-eng
 ```
 
-Final *root.ubi* should be 190,054,400 bytes (190.1 MB on disk)
-Final *root.ubifs* should be 183,861,248 bytes (183.9 MB on disk)
+Artifact File Sizes:
+1. Final *root.ubi* should be 190,054,400 bytes (190.1 MB on disk)
+2. Final *root.ubifs* should be 183,861,248 bytes (183.9 MB on disk)
 
 ### If you encounter any errors while following this guide...
 
