@@ -25,7 +25,7 @@
 	<project remote="sciaps" path="system/core" name="android-system-core" revision="libz5004.2.2" />
 	<project remote="sciaps" path="external/i2c-tools" name="i2c-tools" revision="android" />
 
-	<project path="device/sciaps" remote="sciaps" name="sciaps-device" revision="master" />
+	<project remote="sciaps" path="device/sciaps" name="sciaps-device" revision="master" />
 	<project remote="sciaps" path="vendor/sciaps" name="vendor-sciaps" revision="master" />
 	<project remote="sciaps" path="kernel/sciaps/phenix" name="android-kernel" revision="dev" />
 	<project remote="sciaps" path="external/libusb" name="libusb" revision="sciaps"/>
