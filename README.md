@@ -81,10 +81,13 @@ cd ~/Downloads \
 ### Download and Install Android Studio
 1. https://developer.android.com/studio/index.html
 2. Click the big download button and accept the license
-3. When prompted, just click "Save File"
-4. Once downloaded, run the following: 
+3. When prompted, click "Open with Archive Manager", extract to Downloads folder and then run:
 ```bash
-sudo -- sh -c 'cd ~/Downloads; unzip android-studio-ide-*.zip; sudo mv ~/Downloads/android-studio /opt/; cd ~/Downloads && rm android-studio-ide-*.zip; /opt/android-studio/bin/studio.sh &'
+sudo mv ~/Downloads/android-studio /opt/
+```
+4. Run Android Studio:
+```bash
+/opt/android-studio/bin/studio.sh &
 ```
 5. In the Android Studio Setup Wizard, click Custom
 6. Use Defaults, keep clicking Next
