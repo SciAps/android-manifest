@@ -84,10 +84,7 @@ cd ~/Downloads \
 3. When prompted, just click "Save File"
 4. Once downloaded, run the following: 
 ```bash
-cd ~/Downloads && unzip android-studio-ide-*.zip \
-&& sudo mv ~/Downloads/android-studio /opt/ \
-&& cd ~/Downloads && rm android-studio-ide-*.zip \
-&& /opt/android-studio/bin/studio.sh &
+sudo -- sh -c 'cd ~/Downloads; unzip android-studio-ide-*.zip; sudo mv ~/Downloads/android-studio /opt/; cd ~/Downloads && rm android-studio-ide-*.zip; /opt/android-studio/bin/studio.sh &'
 ```
 5. In the Android Studio Setup Wizard, click Custom
 6. Use Defaults, keep clicking Next
