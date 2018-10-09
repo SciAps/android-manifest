@@ -167,7 +167,9 @@ sudo mkdir -p /opt/aosp \
 && repo sync -f -c -j 4 --no-clone-bundle
 ```
 
-The --no-clone-bundle option saves prescious disk space by only performing shallow clones
+Notes:
+1. Be sure to answer "yes" and "Y" to all prompts
+2. The --no-clone-bundle option saves prescious disk space by only performing shallow clones.
 
 ### Enter build environment and make firmware image
 ```bash
