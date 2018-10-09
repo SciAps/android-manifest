@@ -166,6 +166,8 @@ sudo mkdir -p /opt/aosp \
 && repo sync -f -c -j 4 --no-clone-bundle
 ```
 
+The --no-clone-bundle option saves prescious disk space by only performing shallow clones
+
 ### Enter build environment and make firmware image
 ```bash
 cd /opt/aosp \
@@ -184,8 +186,8 @@ lunch full_chem200-eng
 ```
 
 *full_phenix-eng* Artifact File Sizes:
-1. *root.ubi* should be 190,185,472 bytes (201.4 MB on disk)
-2. *root.ubifs* should be 183,988,224 bytes (184.6 MB on disk)
+1. *root.ubi* should be 189,399,040 bytes (189.4 MB on disk)
+2. *root.ubifs* should be 183,226,368 bytes (183.2 MB on disk)
 
 ### If you encounter any errors while following this guide...
 
