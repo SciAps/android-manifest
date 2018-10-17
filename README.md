@@ -83,11 +83,11 @@ cd ~/Downloads \
 2. Click the big download button and accept the license
 3. When prompted, click "Open with Archive Manager", extract to Downloads folder and then run:
 ```bash
-sudo mv ~/Downloads/android-studio /opt/
+sudo mv ~/Downloads/android-studio ~/android-studio/
 ```
 4. Run Android Studio:
 ```bash
-/opt/android-studio/bin/studio.sh &
+~/android-studio/bin/studio.sh &
 ```
 5. In the Android Studio Setup Wizard, click Custom
 6. Use Defaults, keep clicking Next
