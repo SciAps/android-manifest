@@ -1,10 +1,7 @@
 # Emulator Setup
 
-1. Using Android Studio, create an Android-17 ARM emulator
-2. Run this script when your emulator boots up in order to access the SD card:
-```bash
-adb shell "mount -o rw,remount rootfs && chmod 777 /mnt/sdcard"
-```
-3. Select a step 2 updater from https://github.com/SciAps/XRFMasterSDCard (e.g. X50_Rh.sup)
-4. adb push X50_Rh.sup /sdcard/
-5. Use the Updater app to execute X50_Rh.sup
+1. Using Android Studio, create an Android-19 ARM emulator
+2. git clone, build, and deploy the EmulatorSupport app https://github.com/SciAps/EmulatorSupport
+3. Run the EmulatorSupport app, and click on the init button
+4. Install XRFHome and then XRFAndroid
+5. Follow the instructions listed here to get FastFP up and running: https://github.com/SciAps/EmulatorSupport/blob/master/README.md
