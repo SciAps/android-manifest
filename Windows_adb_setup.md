@@ -2,7 +2,7 @@
 
 The simplest instructions you'll ever read for anything ever
 
-Before we get started, make sure your Android device is NOT plugged in
+Before we get started, make sure your Android device is *NOT* plugged in
 
 ### Download and Install Android Studio
 1. Open your web browser and navigate to https://developer.android.com/studio/index.html
