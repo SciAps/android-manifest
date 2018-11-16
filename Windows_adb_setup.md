@@ -40,4 +40,4 @@ Before we get started, make sure your Android device is *NOT* plugged in
 32. In the **Command Prompt** window, type **adb shell** and hit the **Enter** key again
 33. The adb server will start and then you will be connected to the device; type **ls** to view the root filesystem.
     1. If you see the message: **error: no devices/emulators found**, try unplugging the usb cable and plugging it back in.
-    2. If you are still seeing the message, then it's possible that your Windows OS has already configured an Android device driver before you followed this guide probably, and therefore Windows is NOT using the **Google USB Driver**, but rather a generic USB driver. If this is the case, please see John Egan for instructions on how to reconfigure your Android Device USB Driver.
+    2. If you are still seeing the message, then it's possible that your Windows OS has already configured an Android device driver before you followed this guide, and therefore Windows is NOT using the **Google USB Driver**, but rather a generic USB driver. If this is the case, please see John Egan for instructions on how to reconfigure your Android Device USB Driver.
