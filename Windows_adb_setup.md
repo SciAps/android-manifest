@@ -29,7 +29,7 @@ Before we get started, make sure your Android device is *NOT* plugged in
 22. Right-click on **This PC**, click **Properties**
 23. Click **Advanced system settings**
 24. Click **Environment Variables...**
-25. In the bottom box labeled **System variables**, double-click the row named for Variable **Path**
+25. In the bottom box labeled **System variables**, double-click the row named **Path**
 26. Click **New** in the top-right corner
 27. Paste the following: **C:\Users\sgowen\AppData\Local\Android\Sdk\platform-tools**, but be sure to change **sgowen** to your username.
   1. If you don't know what your username is, just open **File Explorer** again and check your **C:\Users** directory, there should be at least 2 folders, one of which is your username
