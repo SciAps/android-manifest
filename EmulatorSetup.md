@@ -18,5 +18,5 @@
 11. Click on the **Save Spectra** menu option in the 3 dot menu and type "ecal"
 12. Perform an Energy Calibration
 13. After Energy Calibration, repeat step 11 as often as you like, except type in the name of samples you are analzying
-14. On the Desktop side, run the **emulate_xrf_analyzer** script
+14. On the Desktop side, run the **emulate_xrf_analyzer** script (see https://github.com/SciAps/android-manifest/tree/master/scripts)
 15. Your emulator now emulates your analyzer
