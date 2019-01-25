@@ -5,10 +5,10 @@
 2. Download/Install Genymotion: https://www.genymotion.com/download/
 3. Download the ARM translation kit: https://s3-us-west-2.amazonaws.com/sciaps-dev/Genymotion-ARM-Translation_v1.1.zip
 4. Create Emulator named XRF 17 with the following props:
-  Display Size of 480x800 | 213 - TVDPI
-  Android version: 4.2
-  Processor(s): 2
-  Memory size: 1024
+    Display Size of 480x800 | 213 - TVDPI
+    Android version: 4.2
+    Processor(s): 2
+    Memory size: 1024
 5. Start up your emulator
 6. Drag'n'Drop the Genymotion-ARM-Translation_v1.1.zip into your Emulator window, click OK at the flash prompt
 7. Restart the Emulator using the Genymotion app 3-dot menu (stop and then start)
