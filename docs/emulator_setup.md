@@ -21,9 +21,9 @@ You'll need adb to emulate an analyzer.
 9. Restart the Emulator
 10. With your emulator running, plug in an XRF analyzer
 11. On the XRF analyzer, open a Testing App that you would like to emulate (e.g. Alloy)
-12. Place a sample in the XRF Test Stand
-13. In the 3 dot menu, click **Save Spectra**; enter name of the sample
-14. Before taking 1st test, you must perform an Energy Calibration
-15. After Energy Calibration, feel free to take as many tests as you like, all spectra will be saved (click **Save Spectra** to change sample name).
+12. Perform an Energy Calibration
+13. Place a sample in the XRF Test Stand
+14. In the 3 dot menu, click **Save Spectra**; enter name of the sample; take test
+15. Repeat steps 13-14 as many times as needed, all spectra will be saved to /sdcard/sciaps/spectra/
 16. When ready, run the **emulate_xrf_analyzer** script (see ../scripts/<windows|posix>/)
 17. Your analyzer is now emulated
