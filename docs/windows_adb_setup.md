@@ -1,4 +1,4 @@
-# Windows 10 adb Setup
+# Windows adb Setup
 
 The simplest instructions you'll ever read for anything ever
 
