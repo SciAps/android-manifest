@@ -3,7 +3,7 @@
 ## adb
 You'll need adb to emulate an analyzer.
 * For Windows users, read [this](https://github.com/SciAps/android-manifest/blob/master/docs/windows_adb_setup.md) if you do not have adb.
-* For Linux/macOS users, adb gets installed as part of [setting up the development environment](https://github.com/SciAps/DART-SD410-manifest/blob/master/README.md).
+* For Linux/macOS users, adb gets installed as part of [setting up the development environment](https://github.com/SciAps/android-manifest/blob/master/README.md).
 
 ## XRF
 1. Download and Install VirtualBox: https://www.virtualbox.org/wiki/Downloads
