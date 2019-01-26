@@ -24,6 +24,6 @@ You'll need adb to emulate an analyzer.
 12. Perform an Energy Calibration
 13. Place a sample in the XRF Test Stand
 14. In the 3 dot menu, click **Save Spectra**; enter name of the sample; take test
-15. Repeat steps 13-14 as many times as needed, all spectra will be saved to /sdcard/sciaps/spectra/
+15. Repeat steps 13-14 as many times as needed, all spectra will be saved to **/sdcard/sciaps/spectra/**
 16. When ready, run the **emulate_xrf_analyzer** script (download for [posix](https://raw.githubusercontent.com/SciAps/android-manifest/master/scripts/posix/emulate_xrf_analyzer.sh) | [windows](https://raw.githubusercontent.com/SciAps/android-manifest/master/scripts/windows/emulate_xrf_analyzer.bat))
 17. Your analyzer is now emulated
