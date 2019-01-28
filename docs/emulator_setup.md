@@ -11,7 +11,7 @@ You'll need adb to emulate an analyzer.
 3. Download the **ARM translation kit**: https://s3-us-west-2.amazonaws.com/sciaps-dev/Genymotion-ARM-Translation_v1.1.zip
 4. Launch **Genymotion** and scroll all the way to the bottom of the device template list
 5. Click on **ADD CUSTOM DEVICE** and type **XRF-17** for the name. Use the following props:
-  * Display Size of **480x800** | **213 - TVDPI**
+  * Display Size of **480x800** | **240 - HDPI**
   * Android version: **4.2**
   * Processor(s): **2**
   * Memory size: **1024**
