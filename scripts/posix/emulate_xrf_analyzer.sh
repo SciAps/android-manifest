@@ -1,9 +1,5 @@
 #!/bin/bash
 
-echo 'Restarting adb with sudo rights...'
-adb kill-server
-sudo adb start-server
-
 echo 'Remounting file system with write access...'
 adb -e shell mount -o rw,remount /
 adb -e shell mount -o rw,remount /system
