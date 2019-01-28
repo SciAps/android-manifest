@@ -13,12 +13,13 @@ adb -e shell am force-stop com.sciaps.phenix
 adb -e shell am force-stop com.sciaps.xrf
 
 work_dir=$(mktemp -d)
+echo 'Work Dir: $work_dir'
 
 pushd $work_dir
 
 echo 'Pulling Apps...'
-XRFAndroidApkFileName=$(adb -d shell ls /data/app/com.sciaps.xrf* | xargs -n 1 basename)
-XRFHomeApkFileName=$(adb -d shell ls /data/app/com.sciaps.android.home* | xargs -n 1 basename)
+XRFAndroidApkFileName=$(adb -d shell ls /data/app/com.sciaps.xrf* | xargs -n 1 basename | tr -d '\r')
+XRFHomeApkFileName=$(adb -d shell ls /data/app/com.sciaps.android.home* | xargs -n 1 basename | tr -d '\r')
 adb -d pull /data/app/$XRFAndroidApkFileName
 adb -d pull /data/app/$XRFHomeApkFileName
 
@@ -30,11 +31,13 @@ adb -d pull /storage/extsdcard/ecal.log
 adb -d pull /storage/extsdcard/pin.cfg
 
 echo "Installing XRFAndroid..."
+adb -e shell rm -rf /data/data/com.sciaps.xrf
 adb -e push $XRFAndroidApkFileName /data/local/tmp/app.apk
 adb -e shell chmod 777 "/data/local/tmp/app.apk"
 adb -e shell pm install -d -r "/data/local/tmp/app.apk"
 
 echo "Installing XRFHome..."
+adb -e shell rm -rf /data/data/com.sciaps.android.home
 adb -e push $XRFHomeApkFileName /data/local/tmp/app.apk
 adb -e shell chmod 777 "/data/local/tmp/app.apk"
 adb -e shell pm install -d -r "/data/local/tmp/app.apk"
@@ -57,3 +60,4 @@ rm -rf $work_dir
 
 echo 'Force stopping XRF Home...'
 adb -e shell am force-stop com.sciaps.android.home
+adb -e shell am start com.sciaps.android.home/.HomeActivity

@@ -9,12 +9,14 @@ adb -e shell am force-stop com.sciaps.xrf
 set work_dir="load_emulation_package"
 RMDIR /S %work_dir%
 mkdir %work_dir%
+ECHO Work Dir: %work_dir%
+
 pushd %work_dir%
 
 ECHO Pulling Apps...
-adb -d shell ls /data/app/com.sciaps.xrf* | xargs -n 1 basename > XRFAndroidApkFileName.txt
+adb -d shell ls /data/app/com.sciaps.xrf* | xargs -n 1 basename | tr -d '\r' > XRFAndroidApkFileName.txt
 set /p XRFAndroidApkFileName=<XRFAndroidApkFileName.txt
-adb -d shell ls /data/app/com.sciaps.android.home* | xargs -n 1 basename > XRFHomeApkFileName.txt
+adb -d shell ls /data/app/com.sciaps.android.home* | xargs -n 1 basename | tr -d '\r' > XRFHomeApkFileName.txt
 set /p XRFHomeApkFileName=<XRFHomeApkFileName.txt
 adb -d pull /data/app/%XRFAndroidApkFileName%
 adb -d pull /data/app/%XRFHomeApkFileName%
@@ -27,11 +29,13 @@ adb -d pull /storage/extsdcard/ecal.log
 adb -d pull /storage/extsdcard/pin.cfg
 
 ECHO Installing XRFAndroid...
+adb -e shell rm -rf /data/data/com.sciaps.xrf
 adb -e push %XRFAndroidApkFileName% /data/local/tmp/app.apk
 adb -e shell chmod 777 "/data/local/tmp/app.apk"
 adb -e shell pm install -d -r "/data/local/tmp/app.apk"
 
 ECHO Installing XRFHome...
+adb -e shell rm -rf /data/data/com.sciaps.android.home
 adb -e push %XRFHomeApkFileName% /data/local/tmp/app.apk
 adb -e shell chmod 777 "/data/local/tmp/app.apk"
 adb -e shell pm install -d -r "/data/local/tmp/app.apk"
@@ -54,3 +58,4 @@ rm -rf %work_dir%
 
 ECHO Force stopping XRF Home...
 adb -e shell am force-stop com.sciaps.android.home
+adb -e shell am start com.sciaps.android.home/.HomeActivity
