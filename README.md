@@ -192,6 +192,24 @@ lunch full_chem200-eng
 1. *root.ubi* should be 189,399,040 bytes (189.4 MB on disk)
 2. *root.ubifs* should be 183,226,368 bytes (183.2 MB on disk)
 
+### Flash Android Firmware from Master SD Card and Boot
+```bash
+mkdir /mnt \
+&& mount /dev/disk0.1 /mnt/ \
+&& ubiattach /dev/nand0.root \
+&& cp /mnt/images/android_firmware/z100/root.ubifs /dev/ubi0.root \
+&& boot
+```
+
+### Flash Android Kernel from Master SD Card and Boot
+```bash
+mkdir /mnt \
+&& mount /dev/disk0.1 /mnt/ \
+&& erase /dev/nand0.kernel.bb \
+&& cp /mnt/images/kernel/z100/uImage /dev/nand0.kernel.bb \
+&& boot
+```
+
 ### If you encounter any errors while following this guide...
 
 1. UPDATE this guide.
