@@ -9,7 +9,7 @@ https://www.ubuntu.com/download/alternative-downloads
 ### Preliminary steps for macOS Parallels users only
 1. Open the Parallels Control Center and click on the *+* symbol in the top-right corner
 2. Select the "Install Windows or another OS from DVD or image file" and click *Continue*
-3. Drag an ubuntu 16.04 LTS iso into the "Installation Assistant" window and click *Continue*
+3. Drag an ubuntu 14.04 LTS iso into the "Installation Assistant" window and click *Continue*
 4. Type in a password and click *Continue*
 5. Check the "Customize settings before installation" checkbox and click *Create*
 6. In the "Configuration" window, click on the *Hardware* tab
