@@ -1,9 +1,9 @@
-# Configuring Ubuntu 16.04 LTS Dev Environment
+# Configuring Ubuntu 14.04 LTS Dev Environment
 
 ### Additional Resources
 https://source.android.com/source/requirements
 
-### Download Ubuntu 16.04 iso
+### Download Ubuntu 14.04 iso
 https://www.ubuntu.com/download/alternative-downloads
 
 ### Preliminary steps for macOS Parallels users only
