@@ -183,10 +183,6 @@ If building firmware for LIBZ, the lunch command above can be replaced by:
 ```bash
 lunch full_libz100-eng
 ```
-If building firmware for Raman, the lunch command above can be replaced by:
-```bash
-lunch full_chem200-eng
-```
 
 *full_phenix-eng* Artifact File Sizes:
 1. *root.ubi* should be 189,399,040 bytes (189.4 MB on disk)
