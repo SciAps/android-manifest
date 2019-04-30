@@ -1,0 +1,1 @@
+This package will patch the boot animation, ducati driver, and framework-res.apk on top of the existing XRF Android-17 firmware.
