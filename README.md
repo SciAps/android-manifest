@@ -3,13 +3,13 @@
 ### Additional Resources
 https://source.android.com/source/requirements
 
-### Download Ubuntu 14.04 iso
-https://www.ubuntu.com/download/alternative-downloads
+### Download Ubuntu 14.04.5 iso
+https://s3.us-east-2.amazonaws.com/sciaps-ubuntu/ubuntu-14.04.5-desktop-amd64.iso
 
 ### Preliminary steps for macOS Parallels users only
 1. Open the Parallels Control Center and click on the *+* symbol in the top-right corner
 2. Select the "Install Windows or another OS from DVD or image file" and click *Continue*
-3. Drag an ubuntu 14.04 LTS iso into the "Installation Assistant" window and click *Continue*
+3. Drag the ubuntu 14.04.5 LTS iso into the "Installation Assistant" window and click *Continue*
 4. Type in a password and click *Continue*
 5. Check the "Customize settings before installation" checkbox and click *Create*
 6. In the "Configuration" window, click on the *Hardware* tab
