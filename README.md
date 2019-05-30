@@ -10,16 +10,17 @@ https://s3.us-east-2.amazonaws.com/sciaps-ubuntu/ubuntu-14.04.5-desktop-amd64.is
 1. Open the Parallels Control Center and click on the *+* symbol in the top-right corner
 2. Select the "Install Windows or another OS from DVD or image file" and click *Continue*
 3. Drag the ubuntu 14.04.5 LTS iso into the "Installation Assistant" window and click *Continue*
-4. Type in a password and click *Continue*
-5. Check the "Customize settings before installation" checkbox and click *Create*
-6. In the "Configuration" window, click on the *Hardware* tab
-7. Bump up the memory to 4096MB at the minimum if you can
-8. Bump up the graphics memory to 512 MB if you can
-9. Under "Hard Disk", open the "Advanced Settings" and click on *Properties*
-10. Drag the slider to 256-512 GB if you can and click *Apply*
-11. Under "Mouse & Keyboard", make sure *Don't optimize for games* is selected
-12. Close the "Configuration" window and click *Continue*
-13. Once Ubuntu is up and running, install Parallels Tools by clicking on the yellow icon in the top-right corner of the Ubuntu VM window
+4. Uncheck "Express Installation"
+5. Type in a password and click *Continue*
+6. Check the "Customize settings before installation" checkbox and click *Create*
+7. In the "Configuration" window, click on the *Hardware* tab
+8. Bump up the memory to 4096MB at the minimum if you can
+9. Bump up the graphics memory to 512 MB if you can
+10. Under "Hard Disk", open the "Advanced Settings" and click on *Properties*
+11. Drag the slider to 256-512 GB if you can and click *Apply*
+12. Under "Mouse & Keyboard", make sure *Don't optimize for games* is selected
+13. Close the "Configuration" window and click *Continue*
+14. Once Ubuntu is up and running, install Parallels Tools by clicking on the yellow icon in the top-right corner of the Ubuntu VM window
 
 ### Install Necessary Tools via apt-get
 ```bash
