@@ -190,20 +190,33 @@ lunch full_libz100-eng
 2. *root.ubifs* should be 183,226,368 bytes (183.2 MB on disk)
 
 ### Flash Android Firmware from Master SD Card and Boot
+1. Make sure your minicom tool is set up and listens to ttyUSB0. If it's not, set it up using the command below:
+```bash
+sudo minicom -s
+```
+
+2. Keep minicom lauched.
+3. Copy or push (via adb) root.ubifs file to device internal memory and remember its location.
+4. Reboot the instrument and see if the minicom is connected to the instrument. If it's nit, repeat the step #1
+5. Interrupt the bootloader in minicom window by pressing enter key within 3s.
+6. Then you need to mount the main device partition to get access to root.ubifs from the previous step.
+   Note: Be careful! There is a possibility to brick the unit, so double check the commands you are entering, especially the path in 'copy' command.
+
 ```bash
 mkdir /mnt \
-&& mount /dev/disk0.1 /mnt/ \
+&& mount /dev/disk0.0 /mnt/ \
 && ubiattach /dev/nand0.root \
-&& cp /mnt/images/android_firmware/z100/root.ubifs /dev/ubi0.root \
+&& cp /mnt/<path_to_your_file>/root.ubifs /dev/ubi0.root \
 && boot
 ```
 
 ### Flash Android Kernel from Master SD Card and Boot
+If you cannot find the uImage file, check kernel/sciaps/phenix/arch/arm/boot folder (the path may be different for non-XFR models)
 ```bash
 mkdir /mnt \
-&& mount /dev/disk0.1 /mnt/ \
+&& mount /dev/disk0.0 /mnt/ \
 && erase /dev/nand0.kernel.bb \
-&& cp /mnt/images/kernel/z100/uImage /dev/nand0.kernel.bb \
+&& cp /mnt/<path_to_your_image>/uImage /dev/nand0.kernel.bb \
 && boot
 ```
 
