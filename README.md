@@ -76,7 +76,8 @@ cd ~/Downloads \
 && sudo tar xvzf java-6-oracle.tar.gz -C /usr/lib/jvm \
 && rm java-6-oracle.tar.gz \
 && sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/java-6-oracle/bin/java" 1337 \
-&& sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/java-6-oracle/bin/javac" 1337
+&& sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/java-6-oracle/bin/javac" 1337 \
+&& sudo update-alternatives --install "/usr/bin/javadoc" "javadoc" "/usr/lib/jvm/java-6-oracle/bin/javadoc" 1337
 ```
 
 ### Download and Install Android Studio
