@@ -173,6 +173,14 @@ Notes:
 1. Be sure to answer "yes" and "Y" to all prompts
 2. The --no-clone-bundle option saves prescious disk space by only performing shallow clones.
 
+### Checkout correct revision of kernel and device trees:
+```bash
+cd /opt/aosp/kernel/sciaps/phenix \
+&& git checkout libz_release_2.15
+&& cd /opt/aosp/device/sciaps \
+&& git checkout libz100_latest
+```
+
 ### Enter build environment and make firmware image
 ```bash
 cd /opt/aosp \
@@ -184,6 +192,10 @@ cd /opt/aosp \
 If building firmware for LIBZ, the lunch command above can be replaced by:
 ```bash
 lunch full_libz100-eng
+```
+Note that you can build just the kernel with:
+```bash
+m cleankernel && m kernel
 ```
 
 *full_phenix-eng* Artifact File Sizes:
