@@ -176,7 +176,7 @@ Notes:
 ### Checkout correct revision of kernel and device trees:
 ```bash
 cd /opt/aosp/kernel/sciaps/phenix \
-&& git checkout libz_release_2.15
+&& git checkout libz_release_2.15 \
 && cd /opt/aosp/device/sciaps \
 && git checkout libz100_latest
 ```
