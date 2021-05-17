@@ -71,7 +71,7 @@ cd ~/Downloads \
 ### Download the Java SE Development Kit 6
 ```bash
 cd ~/Downloads \
-&& wget https://s3.amazonaws.com/sciaps/java-6-oracle.tar.gz \
+&& wget https://sciaps-firmware-dependencies.s3.us-east-2.amazonaws.com/java-6-oracle.tar.gz \
 && sudo mkdir -p /usr/lib/jvm \
 && sudo tar xvzf java-6-oracle.tar.gz -C /usr/lib/jvm \
 && rm java-6-oracle.tar.gz \
